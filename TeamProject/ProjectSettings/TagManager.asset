@@ -9,6 +9,15 @@ TagManager:
   - player
   - RETURN
   - RESTART
+  - chocolate
+  - pitfall
+  - pudding
+  - dumbbell
+  - chili pepper
+  - cookie
+  - calobar
+  - calorie
+  - Asufaruto
   layers:
   - Default
   - TransparentFX

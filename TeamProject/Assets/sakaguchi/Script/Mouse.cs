@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Mouse : MonoBehaviour
 {
+    private int number0;
     private int number;
     private int number1;
     // Start is called before the first frame update
@@ -18,14 +19,19 @@ public class Mouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         
+        if (SceneManager.GetActiveScene().name == "Title")
+        {
+            Cursor.visible = true;//カーソル表示
+            Cursor.lockState = CursorLockMode.None;//カーソル機能あり
+            ClickGN(number0);
+        }
         if (SceneManager.GetActiveScene().name == "GameOver")
         {
             Cursor.visible = true;//カーソル表示
             Cursor.lockState = CursorLockMode.None;//カーソル機能あり
             ClickGO(number);
         }
-        if (SceneManager.GetActiveScene().name == "GameOver")
+        if (SceneManager.GetActiveScene().name == "GameClear")
         {
             Cursor.visible = true;//カーソル表示
             Cursor.lockState = CursorLockMode.None;//カーソル機能あり
@@ -33,6 +39,18 @@ public class Mouse : MonoBehaviour
         }
     }
 
+    public void ClickGN (int N0)
+    {
+        switch (N0)
+        {
+            case 1:
+                SceneManager.LoadScene("Unity");
+                break;
+      
+            default:
+                break;
+        }
+    }
     public void ClickGO(int N)
     {
        switch(N)
@@ -53,6 +71,7 @@ public class Mouse : MonoBehaviour
         {
             case 1:
                 SceneManager.LoadScene("StageChoicee");
+
                 break;
             case 2:
                 SceneManager.LoadScene("Title");

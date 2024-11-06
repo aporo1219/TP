@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Mouse : MonoBehaviour
+public class Mouse1 : MonoBehaviour
 {
     private int number0;
     private int number;
@@ -12,29 +12,32 @@ public class Mouse : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible = false;//カーソル非表示
-        Cursor.lockState = CursorLockMode.Locked;//カーソル機能なし
+        Cursor.visible = true;//カーソル非表示
+        Cursor.lockState = CursorLockMode.None;//カーソル機能なし
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Title1")
+        if (SceneManager.GetActiveScene().name == "STAGE1")
         {
-            Cursor.visible = true;//カーソル表示
-            Cursor.lockState = CursorLockMode.None;//カーソル機能あり
+            Cursor.visible = false;//カーソル表示
+            Cursor.lockState = CursorLockMode.Locked;//カーソル機能あり
             ClickGN(number0);
         }
-        if (SceneManager.GetActiveScene().name == "GameOver")
+        if (SceneManager.GetActiveScene().name == "Title")
         {
-            Cursor.visible = true;//カーソル表示
-            Cursor.lockState = CursorLockMode.None;//カーソル機能あり
+            
+            ClickGN(number0);
+        }
+        if (SceneManager.GetActiveScene().name == "GAMEOVER1")
+        {
+            
             ClickGO(number);
         }
-        if (SceneManager.GetActiveScene().name == "GameClear")
+        if (SceneManager.GetActiveScene().name == "GAMECLEAR1")
         {
-            Cursor.visible = true;//カーソル表示
-            Cursor.lockState = CursorLockMode.None;//カーソル機能あり
+           
             ClickGC(number1);
         }
     }
@@ -44,7 +47,7 @@ public class Mouse : MonoBehaviour
         switch (N0)
         {
             case 1:
-                SceneManager.LoadScene("Unity");
+                SceneManager.LoadScene("STAGE1");
                 break;
       
             default:
@@ -56,10 +59,10 @@ public class Mouse : MonoBehaviour
        switch(N)
         {
             case 1:
-                SceneManager.LoadScene("Unity");
+                SceneManager.LoadScene("STAGE1");
                 break;
             case 2:
-                SceneManager.LoadScene("Title1");
+                SceneManager.LoadScene("Title");
                 break;
             default:
                 break;
@@ -74,7 +77,7 @@ public class Mouse : MonoBehaviour
 
                 break;
             case 2:
-                SceneManager.LoadScene("Title1");
+                SceneManager.LoadScene("Title");
                 break;
             default:
                 break;

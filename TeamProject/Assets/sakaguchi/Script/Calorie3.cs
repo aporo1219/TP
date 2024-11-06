@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class Calorie1 : MonoBehaviour
+public class Calorie3 : MonoBehaviour
 {
     private
      float CalorieM;//ƒJƒƒŠ[‚Ì‰Šú’l

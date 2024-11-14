@@ -9,6 +9,7 @@ public class Mouse : MonoBehaviour
     private int number0;
     private int number;
     private int number1;
+    private int number2;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,23 +38,28 @@ public class Mouse : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;//カーソル機能あり
             ClickGC(number1);
         }
+        if (SceneManager.GetActiveScene().name == "RANKING1")
+        {
+
+            ClickB(number2);
+        }
     }
 
-    public void ClickGN (int N0)
+    public void ClickGN(int N0)
     {
         switch (N0)
         {
             case 1:
                 SceneManager.LoadScene("Unity");
                 break;
-      
+
             default:
                 break;
         }
     }
     public void ClickGO(int N)
     {
-       switch(N)
+        switch (N)
         {
             case 1:
                 SceneManager.LoadScene("Unity");
@@ -80,7 +86,19 @@ public class Mouse : MonoBehaviour
                 break;
         }
     }
-}
-   
 
-   
+    public void ClickB(int N2)
+    {
+        switch (N2)
+        {
+            case 1:
+                SceneManager.LoadScene("GameClear");
+                break;
+            default:
+                break;
+        }
+    }
+}
+
+
+

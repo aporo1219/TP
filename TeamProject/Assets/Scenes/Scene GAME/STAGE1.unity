@@ -205,12 +205,16 @@ PrefabInstance:
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3580175863467041720, guid: 0c116b1937f694d439dba6f4b5ac257d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.47685
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580175863467041720, guid: 0c116b1937f694d439dba6f4b5ac257d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.9
+      value: 18.99
       objectReference: {fileID: 0}
     - target: {fileID: 3580175863467041720, guid: 0c116b1937f694d439dba6f4b5ac257d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.26
+      value: -3.06
       objectReference: {fileID: 0}
     - target: {fileID: 3580175863467041720, guid: 0c116b1937f694d439dba6f4b5ac257d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -302,11 +306,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2947317340852676896, guid: 93f954396c3e1d045a317f114dd29da2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7
+      value: 17.07
       objectReference: {fileID: 0}
     - target: {fileID: 2947317340852676896, guid: 93f954396c3e1d045a317f114dd29da2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.67
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 2947317340852676896, guid: 93f954396c3e1d045a317f114dd29da2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -642,11 +646,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5385805805735958407, guid: 39ae046ce07878a4189ad1ffa8d6e60d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.72
+      value: 9.75
       objectReference: {fileID: 0}
     - target: {fileID: 5385805805735958407, guid: 39ae046ce07878a4189ad1ffa8d6e60d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.93
+      value: -2.73
       objectReference: {fileID: 0}
     - target: {fileID: 5385805805735958407, guid: 39ae046ce07878a4189ad1ffa8d6e60d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -808,11 +812,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8799641735616636383, guid: 2134a3da3cb9bb94b9b0b5e49bbee996, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.26
+      value: 16.38
       objectReference: {fileID: 0}
     - target: {fileID: 8799641735616636383, guid: 2134a3da3cb9bb94b9b0b5e49bbee996, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.19
+      value: -2.82
       objectReference: {fileID: 0}
     - target: {fileID: 8799641735616636383, guid: 2134a3da3cb9bb94b9b0b5e49bbee996, type: 3}
       propertyPath: m_LocalPosition.z
@@ -970,11 +974,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 29515741201183616, guid: 4ab6e51d613396341802c8fe23ddf44c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.43
+      value: 15.81
       objectReference: {fileID: 0}
     - target: {fileID: 29515741201183616, guid: 4ab6e51d613396341802c8fe23ddf44c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -4.09
+      value: -3.82
       objectReference: {fileID: 0}
     - target: {fileID: 29515741201183616, guid: 4ab6e51d613396341802c8fe23ddf44c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1323,11 +1327,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3763228647566364365, guid: 89a31365f227f7942bc07257a7c71f37, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.18
+      value: 13.77
       objectReference: {fileID: 0}
     - target: {fileID: 3763228647566364365, guid: 89a31365f227f7942bc07257a7c71f37, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: 0.27
       objectReference: {fileID: 0}
     - target: {fileID: 3763228647566364365, guid: 89a31365f227f7942bc07257a7c71f37, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1449,11 +1453,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2669681858250395751, guid: 3c19f8d66667cf040a8b6793d20358cd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.44
+      value: -1.6
       objectReference: {fileID: 0}
     - target: {fileID: 2669681858250395751, guid: 3c19f8d66667cf040a8b6793d20358cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.8282
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 2669681858250395751, guid: 3c19f8d66667cf040a8b6793d20358cd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1578,8 +1582,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5501305}
-  m_AnchoredPosition: {x: -26.127869, y: 157.00006}
-  m_SizeDelta: {x: 249.7442, y: 19.820602}
+  m_AnchoredPosition: {x: 133.9493, y: 27.771}
+  m_SizeDelta: {x: 776.8987, y: 316.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1863782391
 MonoBehaviour:
@@ -1594,7 +1598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 0.95709896, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1603,11 +1607,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 50
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1727,7 +1731,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbc887ab39a8bd8449397e17ba36f552, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CalorieTEXTInitival: 100
   CalorieText: {fileID: 1863782391}
 --- !u!1 &2039551921
 GameObject:
@@ -1791,7 +1794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToShow: {fileID: 1475853367}
-  displayDelay: 2
+  displayDelay: 15
 --- !u!114 &2039551926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1817,17 +1820,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToShowchili: {fileID: 879037475}
-  displayDelaychili: 2
+  displayDelaychili: 5
   objectToShowchoco: {fileID: 339222371}
-  displayDelaychoco: 4
+  displayDelaychoco: 10
   objectToShowcookie: {fileID: 1114636272}
-  displayDelaycookie: 6
+  displayDelaycookie: 15
   objectToShowdombbell: {fileID: 943010864}
   displayDelaydombbell: 15
   objectToShowpitfall: {fileID: 1019135563}
-  displayDelaypitfall: 1
+  displayDelaypitfall: 20
   objectToShowpudding: {fileID: 287436594}
-  displayDelaypudding: 8
+  displayDelaypudding: 25
 --- !u!1 &2049499154
 GameObject:
   m_ObjectHideFlags: 0

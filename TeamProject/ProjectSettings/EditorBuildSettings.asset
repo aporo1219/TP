@@ -9,12 +9,30 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene GAME/Title.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Scene GAME/game select.unity
+    guid: 06fd061c8cd89414fbd0f302f95825eb
+  - enabled: 1
     path: Assets/Scenes/Scene GAME/STAGE1.unity
     guid: 917ea01060ea5cd43afa65185aa3a2c3
+  - enabled: 1
+    path: Assets/Scenes/Scene GAME/STAGE2.unity
+    guid: 4ca2b97a5dc2b8d4b932a8291d83a7ab
+  - enabled: 1
+    path: Assets/Scenes/Scene GAME/STAGE3.unity
+    guid: 710607facbeec3a4088e2b996307c8da
+  - enabled: 1
+    path: Assets/Scenes/Scene GAME/STAGE4.unity
+    guid: d70b3d8c461773d4799644b93508e269
+  - enabled: 1
+    path: Assets/Scenes/Scene GAME/STAGE5.unity
+    guid: de886a357a1582a48a12fa4ae8d658ec
   - enabled: 1
     path: Assets/Scenes/Scene GAME/GAMECLEAR1.unity
     guid: 64e74c98ffaaa4c4fb22ab3cd8fbd3ed
   - enabled: 1
     path: Assets/Scenes/Scene GAME/GAMEOVER1.unity
     guid: 5ec965264875c6b49985170c7edf6cca
+  - enabled: 1
+    path: Assets/Scenes/Scene GAME/operation.unity
+    guid: f9e3297154055c84cbb99dc4d21caf95
   m_configObjects: {}

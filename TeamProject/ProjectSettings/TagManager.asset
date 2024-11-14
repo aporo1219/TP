@@ -18,6 +18,7 @@ TagManager:
   - calobar
   - calorie
   - Asufaruto
+  - Popup
   layers:
   - Default
   - TransparentFX

@@ -288,6 +288,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 288951413222834728, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 702777801}
+    - target: {fileID: 288951413222834728, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 288951413222834731, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -376,6 +384,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: GAMEOVER
       objectReference: {fileID: 0}
+    - target: {fileID: 288951413346542272, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 918
+      objectReference: {fileID: 0}
+    - target: {fileID: 288951413346542272, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 412
+      objectReference: {fileID: 0}
+    - target: {fileID: 288951413346542272, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 288951413346542272, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 288951413442117201, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -387,6 +411,74 @@ PrefabInstance:
     - target: {fileID: 288951413442117201, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Mouse1, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 288951413442117207, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -334.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 288951413442117207, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -148.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 288951414055998337, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_text
+      value: '
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 288951414055998337, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 288951414055998337, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_isOrthographic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 288951414055998337, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 288951414055998337, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281479730
+      objectReference: {fileID: 0}
+    - target: {fileID: 288951414055998337, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 288951414647446944, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_text
+      value: '
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 288951414647446944, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 288951414647446944, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_isOrthographic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 288951414647446944, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 288951414647446944, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281479730
+      objectReference: {fileID: 0}
+    - target: {fileID: 288951414647446944, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 288951414953675737, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 334.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 288951414953675737, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -148.67
       objectReference: {fileID: 0}
     - target: {fileID: 288951414953675739, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

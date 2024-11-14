@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerCollter : MonoBehaviour
 {
-    //•à‚­
+    //æ­©ã
     private float STEP = 3.0f;
-    //‚µ‚á‚ª‚Ş
+    //ã—ã‚ƒãŒã‚€
     private Animator anim = null;
 
     void Start()
@@ -26,7 +26,7 @@ public class PlayerCollter : MonoBehaviour
         {
             anim.SetBool("crouch", false);
         }
-        //‰EŒü‚«
+        //å³å‘ã
         this.transform.position += new Vector3(STEP * Time.deltaTime, 0, 0);
     }
 }

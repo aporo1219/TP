@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5918605359815374498}
   - component: {fileID: 5918605359815374501}
   - component: {fileID: 8977942349451594046}
+  - component: {fileID: 5030751301869174738}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -195,5 +196,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cb0e4f09377d73419ce9a47e7388f2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 0}
-  _cycle: 1
+  flashInterval: 0
+  loopCount: 0
+  chilipepper: {fileID: 0}
+  dumbbell: {fileID: 0}
+  pitfall: {fileID: 0}
+--- !u!114 &5030751301869174738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5918605359815374522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13863b8ff1a2df94e9fd5015a92afabf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 3980233847083487422, guid: d43f0a70d3c591340b751555300e5ae0, type: 3}

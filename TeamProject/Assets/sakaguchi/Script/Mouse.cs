@@ -40,7 +40,8 @@ public class Mouse : MonoBehaviour
         }
         if (SceneManager.GetActiveScene().name == "RANKING1")
         {
-
+            Cursor.visible = true;//カーソル表示
+            Cursor.lockState = CursorLockMode.None;//カーソル機能あり
             ClickB(number2);
         }
     }
@@ -50,7 +51,7 @@ public class Mouse : MonoBehaviour
         switch (N0)
         {
             case 1:
-                SceneManager.LoadScene("Unity");
+                SceneManager.LoadScene("STAGE TEST1");
                 break;
 
             default:
@@ -62,7 +63,7 @@ public class Mouse : MonoBehaviour
         switch (N)
         {
             case 1:
-                SceneManager.LoadScene("Unity");
+                SceneManager.LoadScene("STAGE TEST1");
                 break;
             case 2:
                 SceneManager.LoadScene("Title1");
@@ -81,6 +82,9 @@ public class Mouse : MonoBehaviour
                 break;
             case 2:
                 SceneManager.LoadScene("Title1");
+                break;
+            case 3:
+                SceneManager.LoadScene("RANKING1");
                 break;
             default:
                 break;

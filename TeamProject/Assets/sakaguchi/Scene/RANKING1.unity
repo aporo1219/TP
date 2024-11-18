@@ -206,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 211804194}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1162863923}
+        m_TargetAssemblyTypeName: Mouse, Assembly-CSharp
+        m_MethodName: ClickB
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &211804194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,6 +354,7 @@ GameObject:
   - component: {fileID: 1162863919}
   - component: {fileID: 1162863918}
   - component: {fileID: 1162863922}
+  - component: {fileID: 1162863923}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -447,6 +460,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highcalorieTEXT: {fileID: 1555494275}
+--- !u!114 &1162863923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162863917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9a8a11beb058448ba689c531b7d3bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1334316779
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,8 +587,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.709, y: -38}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 36, y: -69.560074}
+  m_SizeDelta: {x: 377.121, y: 63.1201}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1555494275
 MonoBehaviour:
@@ -587,7 +612,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -642,8 +667,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015259, y: 15.756008}
-  m_SizeDelta: {x: 509, y: 445.51}
+  m_AnchoredPosition: {x: 0.000030518, y: 0.00025558}
+  m_SizeDelta: {x: 919, y: 445.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1726612921
 MonoBehaviour:
@@ -786,8 +811,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015259, y: 0.00025582}
-  m_SizeDelta: {x: 509, y: 414}
+  m_AnchoredPosition: {x: 0.000015259, y: 0.00025582}
+  m_SizeDelta: {x: 919, y: 414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1771745497
 MonoBehaviour:

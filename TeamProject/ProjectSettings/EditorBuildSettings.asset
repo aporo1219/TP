@@ -36,9 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene GAME/operation.unity
     guid: f9e3297154055c84cbb99dc4d21caf95
   - enabled: 0
-    path: Assets/sakaguchi/Scene/GameClear.unity
-    guid: 682e53f09a205654ea000782fed02f9e
-  - enabled: 0
     path: Assets/sakaguchi/Scene/RANKING1.unity
     guid: 12cffd33d8f80af4db65ea2f0224e9d1
+  - enabled: 0
+    path: Assets/sakaguchi/Scene/GameClear.unity
+    guid: 99cbcce4026e1094d8e4c9aa8c281297
   m_configObjects: {}

@@ -4,41 +4,29 @@ using UnityEngine;
 
 public class jump : MonoBehaviour
 {
-    //キャラクターの状態を入れる箱を用意
-    public Rigidbody2D chara;
-    //キャラクターのジャンプ力の設定
-    public float jumpForce = 10f;
-    //地面にいるかどうかの判定設定
-    private bool isGrounded;
+    public float jumpPower;
+    private Rigidbody2D rb;
+    private bool isJumping = false;
 
-    // Start is called before the first frame update
     void Start()
     {
-        //キャラクターの状態を取得
-        chara = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //スペースキーを押されたかどうかを判定
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.Space) && !isJumping)
         {
-            //キャラクターにジャンプさせる
-            chara.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-            //ジャンプしたら、地面から離れたと判定
-            isGrounded = false;
+            rb.velocity = Vector3.up * jumpPower;
+            isJumping = true;
         }
     }
 
-    // 地面に触れているかの判定
-    void OnCollisionEnter2D(Collision2D other)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        //接触したオブジェクトの名前が「Asufaruto」だったら作動する
-        if (other.gameObject.CompareTag("Asufaruto"))
+        if (collision.gameObject.CompareTag("Asufaruto"))
         {
-            //地面と接触していると判定
-            isGrounded = true;
+            isJumping = false;
         }
     }
 }

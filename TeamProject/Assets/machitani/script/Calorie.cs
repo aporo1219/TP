@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Calorie : MonoBehaviour
 {
@@ -26,6 +27,10 @@ public class Calorie : MonoBehaviour
         {
             calobar.value -= 5;
             currentTime = 0;
+        }
+        if (calobar.value == 0)
+        {
+            SceneManager.LoadScene("GAMEOVER");
         }
     }
 }

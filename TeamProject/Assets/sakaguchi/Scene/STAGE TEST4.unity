@@ -1124,6 +1124,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1753334954961694301, guid: e06814ea20b0dd248912f45ed02c5b97, type: 3}
+      propertyPath: m_TagString
+      value: Asufaruto
+      objectReference: {fileID: 0}
     - target: {fileID: 1753334954961694302, guid: e06814ea20b0dd248912f45ed02c5b97, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0010422
@@ -1186,6 +1190,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1753334955121566717, guid: e06814ea20b0dd248912f45ed02c5b97, type: 3}
       propertyPath: m_Name
+      value: Asufaruto
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753334955121566717, guid: e06814ea20b0dd248912f45ed02c5b97, type: 3}
+      propertyPath: m_TagString
+      value: Asufaruto
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753334955384096300, guid: e06814ea20b0dd248912f45ed02c5b97, type: 3}
+      propertyPath: m_TagString
       value: Asufaruto
       objectReference: {fileID: 0}
     - target: {fileID: 1753334955384096301, guid: e06814ea20b0dd248912f45ed02c5b97, type: 3}

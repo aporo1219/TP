@@ -18,10 +18,14 @@ public class StageGoalScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name=="Player")
+        if (other.gameObject.name == "Player")
         {
-            PlayerPrefs.SetInt("SCORE", 3);
+            //PlayerPrefsのSCOREに3という値を入れる
+            PlayerPrefs.SetInt("SCORE", 1);
+            //PlayerPrefsをセーブする         
             PlayerPrefs.Save();
+
         }
     }
 }
+

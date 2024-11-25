@@ -44,8 +44,11 @@ public class PlayerItem : MonoBehaviour
         {
             calobar.value += 30;
         }
+    }
 
-        if (other.gameObject.tag == "pitfall")
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "pitfall")
         {
             calobar.value -= 20;
         }

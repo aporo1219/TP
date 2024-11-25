@@ -17,6 +17,10 @@ public class Goal1 : MonoBehaviour
             if (other.name.Contains("Player"))
             {
                 SceneManager.LoadScene("GAMECLEAR1");
+                //PlayerPrefsのSCOREに3という値を入れる
+                PlayerPrefs.SetInt("SCORE", 2);
+                //PlayerPrefsをセーブする         
+                PlayerPrefs.Save();
             }
         }
     }

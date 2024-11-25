@@ -57,4 +57,12 @@ public class PlayerItem1 : MonoBehaviour
            
         }
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.name.Contains("pitfall"))
+        {
+            calobar.value -= 20;
+        }
+    }
 }

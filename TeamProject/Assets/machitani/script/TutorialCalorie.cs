@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Calorie : MonoBehaviour
+public class TutorialCalorie : MonoBehaviour
 {
     public Slider calobar;
+    public GameObject calo0text;
     public int calo = 100;
     private float currentTime = 0f;
     // Start is called before the first frame update
@@ -23,14 +24,14 @@ public class Calorie : MonoBehaviour
     {
         currentTime += Time.deltaTime;
 
-        if(currentTime >=1.0f)
+        if (currentTime >= 1.0f)
         {
-            calobar.value -= 2;
+            calobar.value -= 5;
             currentTime = 0;
         }
         if (calobar.value == 0)
         {
-            SceneManager.LoadScene("GAMEOVER1");
+            calo0text.SetActive(true);
         }
     }
 }

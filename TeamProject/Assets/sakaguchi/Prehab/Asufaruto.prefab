@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1753334954961694303}
   m_Layer: 0
   m_Name: Asufaruto (1)
-  m_TagString: Untagged
+  m_TagString: Asufaruto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 1753334955384096302}
   m_Layer: 0
   m_Name: Asufaruto (1)
-  m_TagString: Untagged
+  m_TagString: Asufaruto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

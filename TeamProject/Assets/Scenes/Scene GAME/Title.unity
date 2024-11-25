@@ -306,6 +306,22 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5776292182470366576, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 60f4b3e8cc2cc474fae438c4f7e481cf, type: 3}
+    - target: {fileID: 5776292182470366576, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776292182470366576, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5053152
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776292182470366576, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5776292182470366579, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -318,6 +334,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Mouse1, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 5776292183034468705, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7d9226a0eb6a7c049aa1b12e8d733122, type: 3}
     m_RemovedComponents:
     - {fileID: 5776292182083612606, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}

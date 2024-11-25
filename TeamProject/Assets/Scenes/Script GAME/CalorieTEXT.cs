@@ -22,12 +22,53 @@ public class CalorieTEXT : MonoBehaviour
     void Update()
     {
         Ctime += Time.deltaTime;//カロリー文字の設定
-        //時間経過
-        if (Ctime >= 1.0f)
+        //時間経過(ステージ１）
+        if(SceneManager.GetActiveScene().name == "STAGE1")
         {
+          if (Ctime >= 1.0f)
+          {
             CalorieTEXTInitival -= 2;
             Ctime = 0;
+          }
         }
+        //時間経過(ステージ2）
+        if(SceneManager.GetActiveScene().name == "STAGE2")
+        {
+            if (Ctime >= 1.0f)
+            {
+                CalorieTEXTInitival -= 5;
+                Ctime = 0;
+            }
+        }
+        //時間経過(ステージ3）
+        if (SceneManager.GetActiveScene().name == "STAGE3")
+        {
+            if (Ctime >= 1.0f)
+            {
+                CalorieTEXTInitival -= 2;
+                Ctime = 0;
+            }
+        }
+        //時間経過(ステージ4）
+        if (SceneManager.GetActiveScene().name == "STAGE4")
+        {
+            if (Ctime >= 1.0f)
+            {
+                CalorieTEXTInitival -= 2;
+                Ctime = 0;
+            }
+        }
+        //時間経過(ステージ5）
+        if (SceneManager.GetActiveScene().name == "STAGE5")
+        {
+            if (Ctime >= 1.0f)
+            {
+                CalorieTEXTInitival -= 2;
+                Ctime = 0;
+            }
+        }
+
+
         CalorieText.text = "カロリー:" + CalorieTEXTInitival + "Kcal".ToString();//カロリーのテキスト文字をカロリーの初期値におく
         //上限を100
         if (CalorieTEXTInitival >= 100.0f)

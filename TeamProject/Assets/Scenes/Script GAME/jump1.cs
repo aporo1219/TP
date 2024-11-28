@@ -7,10 +7,14 @@ public class jump1 : MonoBehaviour
     public float jumpPower;
     private Rigidbody2D rb;
     private bool isJumping = false;
+    private float timer;
+    private int i;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        timer = 0.0f;
+        
     }
 
     void Update()
@@ -28,5 +32,17 @@ public class jump1 : MonoBehaviour
         {
             isJumping = false;
         }
+        if(collision.gameObject.tag=="empty ca")
+        {
+            jumpPower = 6;
+            Invoke(nameof(Timer), 4.0f);
+        }
+    }
+
+    public void Timer()
+    {
+        jumpPower = 8;
+        Debug.Log("ƒWƒƒƒ“ƒv—Í‚ª–ß‚é");
+        
     }
 }

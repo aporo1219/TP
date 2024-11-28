@@ -6,29 +6,36 @@ using UnityEngine.SceneManagement;
 
 public class CalorieTEXT : MonoBehaviour
 {
-    public static float CalorieTEXTInitival;//カロリー文字の初期化
+    public static float CalorieTEXTInitival;//カロリー文字の変数
     public Text CalorieText;//カロリーの文字の変数
     private float Ctime;//経過時間
+    public static int StageInfor;//ステージ情報の取得
 
     // Start is called before the first frame update
     void Start()
     {
         CalorieTEXTInitival = 100;
+        StageInfor = 0;//クリアしたステージによってリザルトのスイーツの絵を変える
     }
 
 
 
     // Update is called once per frame
     void Update()
-    {
+    { 
+        CalorieText.text = "カロリー:" + CalorieTEXTInitival + "Kcal".ToString();//カロリーのテキスト文字をカロリーの初期値におく
         Ctime += Time.deltaTime;//カロリー文字の設定
         //時間経過(ステージ１）
         if(SceneManager.GetActiveScene().name == "STAGE1")
         {
+          
+         
           if (Ctime >= 1.0f)
           {
             CalorieTEXTInitival -= 2;
             Ctime = 0;
+           
+            StageInfor = 0;
           }
         }
         //時間経過(ステージ2）
@@ -38,6 +45,8 @@ public class CalorieTEXT : MonoBehaviour
             {
                 CalorieTEXTInitival -= 5;
                 Ctime = 0;
+
+                StageInfor = 1;
             }
         }
         //時間経過(ステージ3）
@@ -47,6 +56,8 @@ public class CalorieTEXT : MonoBehaviour
             {
                 CalorieTEXTInitival -= 2;
                 Ctime = 0;
+
+                StageInfor = 2;
             }
         }
         //時間経過(ステージ4）
@@ -56,6 +67,8 @@ public class CalorieTEXT : MonoBehaviour
             {
                 CalorieTEXTInitival -= 2;
                 Ctime = 0;
+
+                StageInfor = 3;
             }
         }
         //時間経過(ステージ5）
@@ -63,13 +76,15 @@ public class CalorieTEXT : MonoBehaviour
         {
             if (Ctime >= 1.0f)
             {
-                CalorieTEXTInitival -= 2;
+                CalorieTEXTInitival -= 5;
                 Ctime = 0;
+
+                StageInfor = 4;
             }
         }
 
 
-        CalorieText.text = "カロリー:" + CalorieTEXTInitival + "Kcal".ToString();//カロリーのテキスト文字をカロリーの初期値におく
+        
         //上限を100
         if (CalorieTEXTInitival >= 100.0f)
         {
@@ -110,21 +125,36 @@ public class CalorieTEXT : MonoBehaviour
 
         if (other.gameObject.tag == "pudding")
         {
-            CalorieTEXTInitival += 20;
+            CalorieTEXTInitival += 30;
 
         }
 
+        if(other.gameObject.tag == "Choco night")
+        {
+            CalorieTEXTInitival += 10;
+        }
+
+        if (other.gameObject.tag == "Pud night")
+        {
+            CalorieTEXTInitival += 15;
+        }
+
+        if (other.gameObject.tag == "Cook night")
+        {
+            CalorieTEXTInitival += 5;
+        }
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "pitfall")
         {
-            CalorieTEXTInitival -= 30;
+            CalorieTEXTInitival -= 20;
 
         }
     }
 
+   
     public void GAMEOVER()
     {
         SceneManager.LoadScene("GameOver1");

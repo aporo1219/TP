@@ -322,6 +322,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5776292182470366578, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 379.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776292182470366578, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -215.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5776292182470366579, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -333,6 +341,22 @@ PrefabInstance:
     - target: {fileID: 5776292182470366579, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Mouse1, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776292183034468704, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1055
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776292183034468704, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 546
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776292183034468704, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776292183034468704, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0000076293945
       objectReference: {fileID: 0}
     - target: {fileID: 5776292183034468705, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
       propertyPath: m_Sprite

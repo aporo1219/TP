@@ -64,7 +64,26 @@ public class Mouse1 : MonoBehaviour
         switch (N)
         {
             case 1:
-                SceneManager.LoadScene("STAGE1");
+                if(CalorieTEXT.StageInfor == 0)
+                {
+                  SceneManager.LoadScene("STAGE1");
+                }
+                if (CalorieTEXT.StageInfor == 1)
+                {
+                    SceneManager.LoadScene("STAGE2");
+                }
+                if (CalorieTEXT.StageInfor == 2)
+                {
+                    SceneManager.LoadScene("STAGE3");
+                }
+                if (CalorieTEXT.StageInfor == 3)
+                {
+                    SceneManager.LoadScene("STAGE4");
+                }
+                if (CalorieTEXT.StageInfor == 4)
+                {
+                    SceneManager.LoadScene("STAGE5");
+                }
                 break;
             case 2:
                 SceneManager.LoadScene("Title");

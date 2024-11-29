@@ -484,7 +484,7 @@ PrefabInstance:
     - target: {fileID: 5776292183034468705, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7d9226a0eb6a7c049aa1b12e8d733122, type: 3}
+      objectReference: {fileID: 21300000, guid: bc75a3eed1d76444e9fad3a1b70ec51d, type: 3}
     m_RemovedComponents:
     - {fileID: 5776292182083612606, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}

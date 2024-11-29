@@ -687,7 +687,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1146937460}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1763003185}
+        m_TargetAssemblyTypeName: Mouse1, Assembly-CSharp
+        m_MethodName: ClickGO
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1146937460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1087,6 +1099,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 702777801}
+    - target: {fileID: 288951413222834728, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 288951413222834728, guid: aeefa84d06ebcca42a32829471d8d523, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25

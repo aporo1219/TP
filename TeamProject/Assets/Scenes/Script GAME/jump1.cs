@@ -7,13 +7,12 @@ public class jump1 : MonoBehaviour
     public float jumpPower;
     private Rigidbody2D rb;
     private bool isJumping = false;
-    private float timer;
-    private int i;
+    
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        timer = 0.0f;
+        
         
     }
 
@@ -23,6 +22,9 @@ public class jump1 : MonoBehaviour
         {
             rb.velocity = Vector3.up * jumpPower;
             isJumping = true;
+
+            //SEçƒê∂
+            SoundManager.soundManager.SEPlay(SEType.jump);
         }
     }
 

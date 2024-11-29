@@ -66,16 +66,16 @@ public class PlayerItem1 : MonoBehaviour
         {
             calobar.value += 10;
         }
-    } 
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-       if (collision.gameObject.tag == "pitfall")
-       {
-                calobar.value -= 20;
-
-       }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "pitfall")
+        {
+            calobar.value -= 20;
+
+        }
+    }
 }
 
 

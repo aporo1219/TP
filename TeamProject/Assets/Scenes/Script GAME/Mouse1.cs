@@ -52,7 +52,7 @@ public class Mouse1 : MonoBehaviour
         switch (N0)
         {
             case 1:
-                SceneManager.LoadScene("STAGE1");
+                SceneManager.LoadScene("game select");
                 break;
 
             default:

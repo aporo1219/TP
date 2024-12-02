@@ -19,6 +19,7 @@ public class SpriteRendererBlinker : MonoBehaviour
     public GameObject chilipepper;//唐辛子
     public GameObject dumbbell;//ダンベル
     public GameObject pitfall;//落とし穴
+    public GameObject emptyca;//空き缶
 
     private void Start()
     {
@@ -29,6 +30,16 @@ public class SpriteRendererBlinker : MonoBehaviour
     }
 
     //衝突時の処理
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        //落とし穴
+        if (col.gameObject.tag == "pitfall")
+        {
+            //コルーチンを開始
+            StartCoroutine(_hit());
+        }
+        return;
+    }
     private void OnCollisionEnter2D(Collision2D other)
     {
         //唐辛子
@@ -45,15 +56,15 @@ public class SpriteRendererBlinker : MonoBehaviour
             StartCoroutine(_hit());
         }
 
-        //落とし穴
-        if (other.gameObject.tag == "pitfall")
+        //空き缶
+        if (other.gameObject.tag == "empty ca")
         {
             //コルーチンを開始
             StartCoroutine(_hit());
         }
         return;
     }
-
+    
     //点滅させる処理
     IEnumerator _hit()
     {

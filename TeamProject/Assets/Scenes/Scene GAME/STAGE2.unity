@@ -556,6 +556,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   calobar: {fileID: 213779775}
+--- !u!114 &233431787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233431767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4f185796acb7d54082e710323139fdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 6707693307772794220, guid: 0e8fb4b13ca9db74f9f5fbd2df332ef5, type: 3}
+--- !u!114 &233431788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233431767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d061e684460e7934a873026fbd65a2fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashInterval: 0.02
+  loopCount: 4
+  chilipepper: {fileID: 780319744}
+  dumbbell: {fileID: 1426658583}
+  pitfall: {fileID: 1493166691}
+  emptyca: {fileID: 0}
 --- !u!1 &248292400 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3665473860994911618, guid: 0c3b1aef19090574c98c62e2b57e7976, type: 3}

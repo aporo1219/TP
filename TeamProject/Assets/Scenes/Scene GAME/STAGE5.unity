@@ -3381,6 +3381,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpPower: 8
+--- !u!114 &1934195407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934195393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4f185796acb7d54082e710323139fdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 6707693307772794220, guid: 0e8fb4b13ca9db74f9f5fbd2df332ef5, type: 3}
+--- !u!114 &1934195408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934195393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d061e684460e7934a873026fbd65a2fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashInterval: 0.02
+  loopCount: 4
+  chilipepper: {fileID: 0}
+  dumbbell: {fileID: 1168739069}
+  pitfall: {fileID: 149034848}
+  emptyca: {fileID: 1386155374}
 --- !u!1 &1950378783
 GameObject:
   m_ObjectHideFlags: 0

@@ -1839,7 +1839,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4490b7bd7fe27446a21078e42ec543a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SE: {fileID: 1893688464}
 --- !u!1 &1893688464
 GameObject:
   m_ObjectHideFlags: 0
@@ -2084,6 +2083,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   calobar: {fileID: 1792997285}
+--- !u!114 &1900071210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900071202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4f185796acb7d54082e710323139fdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 6707693307772794220, guid: 0e8fb4b13ca9db74f9f5fbd2df332ef5, type: 3}
+--- !u!114 &1900071211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900071202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d061e684460e7934a873026fbd65a2fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashInterval: 0.02
+  loopCount: 4
+  chilipepper: {fileID: 455119590}
+  dumbbell: {fileID: 1323782419}
+  pitfall: {fileID: 1081695403}
+  emptyca: {fileID: 0}
 --- !u!1001 &1904910520
 PrefabInstance:
   m_ObjectHideFlags: 0

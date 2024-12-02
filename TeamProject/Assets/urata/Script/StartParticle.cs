@@ -57,5 +57,38 @@ public class StartParticle : MonoBehaviour
 			//SE再生
 			SoundManager.soundManager.SEPlay(SEType.recovery);
 		}
+
+		// 当たった相アイテムが"Choco night"“Pud night”タグを持っていたら
+		if (collision.gameObject.tag == "Choco night")//チョコ
+		{
+			// パーティクルシステムのインスタンスを生成する。
+			ParticleSystem newParticle = Instantiate(particle);
+			// パーティクルの発生場所をこのスクリプトをアタッチしているGameObjectの場所にする。
+			newParticle.transform.position = this.transform.position;
+			// パーティクルを発生させる。
+			newParticle.Play();
+			// インスタンス化したパーティクルシステムのGameObjectを5秒後に削除する。(任意)
+			// ※第一引数をnewParticleだけにするとコンポーネントしか削除されない。
+			Destroy(newParticle.gameObject, 5.0f);
+
+			//SE再生
+			SoundManager.soundManager.SEPlay(SEType.recovery);
+		}
+
+		if (collision.gameObject.tag == "Pud night")//プリン
+		{
+			// パーティクルシステムのインスタンスを生成する。
+			ParticleSystem newParticle = Instantiate(particle);
+			// パーティクルの発生場所をこのスクリプトをアタッチしているGameObjectの場所にする。
+			newParticle.transform.position = this.transform.position;
+			// パーティクルを発生させる。
+			newParticle.Play();
+			// インスタンス化したパーティクルシステムのGameObjectを5秒後に削除する。(任意)
+			// ※第一引数をnewParticleだけにするとコンポーネントしか削除されない。
+			Destroy(newParticle.gameObject, 5.0f);
+
+			//SE再生
+			SoundManager.soundManager.SEPlay(SEType.recovery);
+		}
 	}
 }

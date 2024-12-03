@@ -52,7 +52,7 @@ public class RANKING : MonoBehaviour
             PlayerPrefs.Save();//スコアの保存関数
             if (Input.GetKeyDown(KeyCode.Space))//スペースが押されたらカロリー量のリセット
             {
-                PlayerPrefs.DeleteKey("HIGHCALORIE1",0);
+                PlayerPrefs.DeleteKey("HIGHCALORIE1");
             }
         }
         if (CalorieTEXT.StageInfor == 1)

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 // ゴールを制御するスクリプト
-public class Goal1 : MonoBehaviour
+public class Goal5 : MonoBehaviour
 {
     // ゴールしたかどうか
     private bool m_isGoal;
@@ -17,12 +17,6 @@ public class Goal1 : MonoBehaviour
             if (other.name.Contains("Player"))
             {
                 SceneManager.LoadScene("GAMECLEAR1");
-
-                    PlayerPrefs.SetInt("SCORE", 2);
-
-                    PlayerPrefs.Save();
-                
-               
             }
         }
     }

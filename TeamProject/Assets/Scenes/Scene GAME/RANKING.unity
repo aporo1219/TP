@@ -1255,6 +1255,11 @@ MonoBehaviour:
   highcalorieTEXT3: {fileID: 1730990912}
   highcalorieTEXT4: {fileID: 11933488}
   highcalorieTEXT5: {fileID: 495099178}
+  HCT1: {fileID: 219055747}
+  HCT2: {fileID: 739011096}
+  HCT3: {fileID: 1730990911}
+  HCT4: {fileID: 11933487}
+  HCT5: {fileID: 495099177}
 --- !u!1001 &2147132360
 PrefabInstance:
   m_ObjectHideFlags: 0

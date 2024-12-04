@@ -1920,6 +1920,32 @@ MonoBehaviour:
   dumbbell: {fileID: 401042902}
   pitfall: {fileID: 1146054064}
   emptyca: {fileID: 0}
+--- !u!61 &926177534
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926177527}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.2208285, y: -0.16689587}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2842002, y: 4.666397}
+  m_EdgeRadius: 0
 --- !u!1001 &951176107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3610,6 +3636,14 @@ PrefabInstance:
     - target: {fileID: 1256506947706843048, guid: 544093e7a9e48ff418d67e5559d5eea6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.058
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256506947706843049, guid: 544093e7a9e48ff418d67e5559d5eea6, type: 3}
+      propertyPath: m_Size.y
+      value: 4.667041
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256506947706843049, guid: 544093e7a9e48ff418d67e5559d5eea6, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.16647947
       objectReference: {fileID: 0}
     - target: {fileID: 1256506947706843053, guid: 544093e7a9e48ff418d67e5559d5eea6, type: 3}
       propertyPath: m_Name

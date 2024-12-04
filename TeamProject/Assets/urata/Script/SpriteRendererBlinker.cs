@@ -38,33 +38,29 @@ public class SpriteRendererBlinker : MonoBehaviour
             //コルーチンを開始
             StartCoroutine(_hit());
         }
-        return;
-    }
-    private void OnCollisionEnter2D(Collision2D other)
-    {
+
         //唐辛子
-        if (other.gameObject.tag == "chili pepper")
+        if (col.gameObject.tag == "chili pepper")
         {
             //コルーチンを開始
             StartCoroutine(_hit());
         }
 
         //ダンベル
-        if (other.gameObject.tag == "dumbbell")
+        if (col.gameObject.tag == "dumbbell")
         {
             //コルーチンを開始
             StartCoroutine(_hit());
         }
 
         //空き缶
-        if (other.gameObject.tag == "empty ca")
+        if (col.gameObject.tag == "empty ca")
         {
             //コルーチンを開始
             StartCoroutine(_hit());
         }
         return;
     }
-    
     //点滅させる処理
     IEnumerator _hit()
     {

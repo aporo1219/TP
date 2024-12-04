@@ -21,8 +21,6 @@ public enum SEType
     crouch,         //しゃがむ
     damage,         //当たった時の音
     recovery,       //回復音
-    Clerk,          //店員
-    Chime,          //チャイム
     UImusic,        //各UIを押した場合の音
 }
 
@@ -41,8 +39,6 @@ public class SoundManager:MonoBehaviour
     public AudioClip secrouch;              //しゃがむ
     public AudioClip sedamage;              //当たった時の音
     public AudioClip serecovery;            //回復音
-    public AudioClip seClerk;               //店員
-    public AudioClip meChime;               //チャイム
     public AudioClip meUImusic;             //各UIを押した場合の音
 
     public static SoundManager soundManager;//最初のSoundManagerを保存する
@@ -125,14 +121,6 @@ public class SoundManager:MonoBehaviour
         else if (type == SEType.recovery)
         {
             GetComponent < AudioSource >().PlayOneShot(serecovery);//回復音
-        }
-        else if (type == SEType.Clerk)
-        {
-            GetComponent < AudioSource >().PlayOneShot(seClerk);//店員
-        }
-        else if (type == SEType.Chime)
-        {
-            GetComponent < AudioSource >().PlayOneShot(meChime);//チャイム
         }
         else if (type == SEType.UImusic)
         {

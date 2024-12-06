@@ -10,7 +10,8 @@ public class CalorieTEXT : MonoBehaviour
     public Text CalorieText;//カロリーの文字の変数
     private float Ctime;//経過時間
     public static int StageInfor;//ステージ情報の取得
-   
+    public Text RD;//残り距離のテキスト
+    public float distance;//残り距離の計算用の変数
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class CalorieTEXT : MonoBehaviour
         Time.timeScale = 0;//Aボタン押されるまで停止
         CalorieTEXTInitival = 100;
         StageInfor = 0;//クリアしたステージによってリザルトのスイーツの絵を変える
+        distance = 37;//距離の初期化
     }
 
 
@@ -31,6 +33,9 @@ public class CalorieTEXT : MonoBehaviour
         }
         CalorieText.text = "カロリー:" + CalorieTEXTInitival + "Kcal".ToString();//カロリーのテキスト文字をカロリーの初期値におく
         Ctime += Time.deltaTime;//カロリー文字の設定
+
+        distance -= Time.deltaTime;//残り距離の計算
+        RD.text = "お店までの距離は" + distance + "メートルです。".ToString();//残り距離のテキスト
         //時間経過(ステージ１）
         if(SceneManager.GetActiveScene().name == "STAGE1")
         {
@@ -151,7 +156,7 @@ public class CalorieTEXT : MonoBehaviour
         }
 
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "pitfall")
         {
@@ -161,7 +166,7 @@ public class CalorieTEXT : MonoBehaviour
     }
 
    
-    public void GAMEOVER()
+    private void GAMEOVER()
     {
         SceneManager.LoadScene("GameOver1");
 

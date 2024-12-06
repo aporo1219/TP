@@ -12,9 +12,9 @@ public class BackMoveVertical : MonoBehaviour
     {
         transform.position -= new Vector3(0, Time.deltaTime * speed);//‰º‚ÉŠG‚ð“®‚©‚·
 
-        if(transform.position.y <= -11)//ŠG‚ª‰º‚Ü‚Ås‚Á‚½‚çã‚É–ß‚é
+        if(transform.position.y <= -8.6)//ŠG‚ª‰º‚Ü‚Ås‚Á‚½‚çã‚É–ß‚é
         {
-            transform.position = new Vector3(0, 5.22f);
+            transform.position = new Vector3(0, 18.1f);
         }
     }
 }

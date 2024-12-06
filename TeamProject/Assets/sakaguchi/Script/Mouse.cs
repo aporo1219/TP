@@ -42,7 +42,7 @@ public class Mouse : MonoBehaviour
         {
             Cursor.visible = true;//カーソル表示
             Cursor.lockState = CursorLockMode.None;//カーソル機能あり
-            ClickB(number2);
+            ClickR(number2);
         }
     }
 
@@ -91,17 +91,22 @@ public class Mouse : MonoBehaviour
         }
     }
 
-    public void ClickB(int N2)
+    public void ClickR(int N2)
     {
         switch (N2)
         {
             case 1:
                 SceneManager.LoadScene("GameClear");
                 break;
+            case 2:
+                PlayerPrefs.DeleteKey("HICALORIE1");
+                break;
             default:
                 break;
         }
     }
+
+    
 }
 
 

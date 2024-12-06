@@ -7,10 +7,10 @@ public class StartParticle : MonoBehaviour
 	private ParticleSystem particle;
 
 	//衝突時の処理
-	void OnTriggerEnter2D(Collider2D col)
+	private void OnCollisionEnter2D(Collision2D collision)
 	{
 		// 当たったアイテムが"chocolate"“cookie”“pudding”タグを持っていたら
-		if (col.gameObject.tag == "chocolate")//チョコ
+		if (collision.gameObject.tag == "chocolate")//チョコ
 		{
 			// パーティクルシステムのインスタンスを生成する。
 			ParticleSystem newParticle = Instantiate(particle);
@@ -26,7 +26,7 @@ public class StartParticle : MonoBehaviour
 			SoundManager.soundManager.SEPlay(SEType.recovery);
 		}
 
-		if (col.gameObject.tag == "cookie")//クッキー
+		if (collision.gameObject.tag == "cookie")//クッキー
 		{
 			// パーティクルシステムのインスタンスを生成する。
 			ParticleSystem newParticle = Instantiate(particle);
@@ -42,7 +42,7 @@ public class StartParticle : MonoBehaviour
 			SoundManager.soundManager.SEPlay(SEType.recovery);
 		}
 
-		if (col.gameObject.tag == "pudding")//プリン
+		if (collision.gameObject.tag == "pudding")//プリン
 		{
 			// パーティクルシステムのインスタンスを生成する。
 			ParticleSystem newParticle = Instantiate(particle);
@@ -58,7 +58,7 @@ public class StartParticle : MonoBehaviour
 			SoundManager.soundManager.SEPlay(SEType.recovery);
 		}
 		// 当たったアイテムが"Choco night"“Pud night”タグを持っていたら
-		if (col.gameObject.tag == "Choco night")//チョコ
+		if (collision.gameObject.tag == "Choco night")//チョコ
 		{
 			// パーティクルシステムのインスタンスを生成する。
 			ParticleSystem newParticle = Instantiate(particle);
@@ -74,7 +74,7 @@ public class StartParticle : MonoBehaviour
 			SoundManager.soundManager.SEPlay(SEType.recovery);
 		}
 
-		if (col.gameObject.tag == "Pud night")//プリン
+		if (collision.gameObject.tag == "Pud night")//プリン
 		{
 			// パーティクルシステムのインスタンスを生成する。
 			ParticleSystem newParticle = Instantiate(particle);

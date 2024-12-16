@@ -20,25 +20,28 @@ public class Mouse1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //シーンがタイトルの時
         if (SceneManager.GetActiveScene().name == "Title")
         {
             Cursor.visible = true;//カーソル表示
             Cursor.lockState = CursorLockMode.None;//カーソル機能あり
             ClickGN(number0);
         }
+        //シーンがゲームオーバーの時
         if (SceneManager.GetActiveScene().name == "GAMEOVER1")
         {
             Cursor.visible = true;//カーソル表示
             Cursor.lockState = CursorLockMode.None;//カーソル機能あり
             ClickGO(number);
         }
+        //シーンがゲームクリアの時
         if (SceneManager.GetActiveScene().name == "GAMECLEAR1")
         {
             Cursor.visible = true;//カーソル表示
             Cursor.lockState = CursorLockMode.None;//カーソル機能あり
             ClickGC(number1);
         }
+        //シーンがランキングの時
         if (SceneManager.GetActiveScene().name == "RANKING")
         {
             Cursor.visible = true;//カーソル表示
@@ -47,11 +50,13 @@ public class Mouse1 : MonoBehaviour
         }
     }
 
+    //タイトルのボタン関数
     public void ClickGN(int N0)
     {
         switch (N0)
         {
             case 1:
+                //ゲームセレクトへボタンの処理
                 SceneManager.LoadScene("game select");
                 break;
 
@@ -59,11 +64,13 @@ public class Mouse1 : MonoBehaviour
                 break;
         }
     }
+    //ゲームオーバーシーンのボタン関数
     public void ClickGO(int N)
     {
         switch (N)
         {
             case 1:
+                //戻るボタンの処理
                 if(CalorieTEXT.StageInfor == 0)
                 {
                   SceneManager.LoadScene("STAGE1");
@@ -86,35 +93,41 @@ public class Mouse1 : MonoBehaviour
                 }
                 break;
             case 2:
+                //タイトルに戻るボタンの処理
                 SceneManager.LoadScene("Title");
                 break;
             default:
                 break;
         }
     }
+    //ゲームクリアのボタン関数
     public void ClickGC(int N1)
     {
         switch (N1)
         {
             case 1:
+                //ステージセレクトへのボタンの処理
                 SceneManager.LoadScene("game select");
                 break;
             case 2:
+                //タイトルに戻るボタンの処理
                 SceneManager.LoadScene("Title");
                 break;
             case 3:
+                //ランキング表示ボタンの処理
                 SceneManager.LoadScene("RANKING");
                 break;
             default:
                 break;
         }
     }
-
+    //ランキングシーンのボタン関数
     public void ClickB(int N2)
     {
         switch (N2)
         {
             case 1:
+                //ゲームクリアに戻るボタンの処理
                 SceneManager.LoadScene("GAMECLEAR1");
                 break;
             default:

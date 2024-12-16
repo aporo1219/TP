@@ -6,17 +6,20 @@ using UnityEngine.UI;
 
 public class Result : MonoBehaviour
 {
+    //クリア画面のスイーツオブジェクトの変数
     [SerializeField] public GameObject M;
     [SerializeField] public GameObject Pan;
     [SerializeField] public GameObject Par;
     [SerializeField] public GameObject C;
     [SerializeField] public GameObject D;
 
+    //テキストの変数
     public Text resultcalo;
 
 
     void Start()
     {
+        //文字の初期化
         M.SetActive(false);
         Pan.SetActive(false);
         Par.SetActive(false);
@@ -26,6 +29,7 @@ public class Result : MonoBehaviour
 
      void Update()
     {
+        //文字の表示
         resultcalo.text = "カロリーの残量は" + CalorieTEXT.CalorieTEXTInitival + "kcalです。";//文字の表示
 
         if(CalorieTEXT.StageInfor == 0)//ステージ1のスイーツの表示

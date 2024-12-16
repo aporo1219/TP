@@ -5,18 +5,18 @@ using UnityEngine;
 public class BackMove1 : MonoBehaviour
 {
     [SerializeField]
-    float scrollSpeed = -1;
+    float scrollSpeed = -1;//スクロールスピード
     Vector3 cameraRectMin;
     // Start is called before the first frame update
     void Start()
     {
-        cameraRectMin = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, Camera.main.transform.position.z));
+        cameraRectMin = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, Camera.main.transform.position.z));//初期化
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
+        Move();//移動関数
     }
     void Move()
     {

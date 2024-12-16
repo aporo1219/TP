@@ -8,6 +8,7 @@ public class StageSelectManager : MonoBehaviour
 {
     public void OnStageSelectButtonPressed(int bossID)
     {
+        //ボタンによってシーンを切り替え
         SceneManager.LoadScene(bossID + 1);
     }
 }

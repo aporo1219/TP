@@ -7,25 +7,15 @@ public class PopupScript : MonoBehaviour
 {
     public GameObject Popup;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void Appear()
     {
+        //ポップアップを出す
         Popup.SetActive(true);
     }
 
     public void Delete()
     {
+        //ポップアップを消す
         Popup.SetActive(false);
     }
 }

@@ -508,7 +508,7 @@ SpriteRenderer:
   m_Size: {x: 5.84, y: 5.7}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &609992155
@@ -758,7 +758,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057134634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0271, y: 0.0271, z: 0}
+  m_LocalPosition: {x: 2.23, y: 0.02, z: 0}
   m_LocalScale: {x: 2.2745159, y: 1.9949378, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -945,7 +945,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 678, y: 255.76}
+  m_AnchoredPosition: {x: 678, y: 187}
   m_SizeDelta: {x: 288.94, y: 184.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1224815436
@@ -1087,11 +1087,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 50
+    m_MaxSize: 60
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1124,7 +1124,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -150, y: 41}
+  m_AnchoredPosition: {x: -180, y: 43}
   m_SizeDelta: {x: 625.449, y: 132.4996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1458472688 stripped
@@ -1483,11 +1483,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2194479528754122019, guid: bb38604defb80344fab70d008d3c9920, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 678
+      value: 663
       objectReference: {fileID: 0}
     - target: {fileID: 2194479528754122019, guid: bb38604defb80344fab70d008d3c9920, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -272.68
+      value: -338
       objectReference: {fileID: 0}
     - target: {fileID: 2194479528754122028, guid: bb38604defb80344fab70d008d3c9920, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1663,11 +1663,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2194479530086550877, guid: bb38604defb80344fab70d008d3c9920, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -671
+      value: -668
       objectReference: {fileID: 0}
     - target: {fileID: 2194479530086550877, guid: bb38604defb80344fab70d008d3c9920, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -273
+      value: -338.32
       objectReference: {fileID: 0}
     - target: {fileID: 2194479530086550878, guid: bb38604defb80344fab70d008d3c9920, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

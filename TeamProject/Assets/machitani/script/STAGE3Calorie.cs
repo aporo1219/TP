@@ -28,9 +28,10 @@ public class STAGE3Calorie : MonoBehaviour
             calobar.value -= 5;
             currentTime = 0;
         }
-
+        //カロリーゲージが0になったら
         if (calobar.value == 0)
         {
+            //ゲームオーバーシーンに移動
             SceneManager.LoadScene("GAMEOVER1");
         }
     }

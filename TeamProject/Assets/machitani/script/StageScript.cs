@@ -20,20 +20,28 @@ public class StageScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (stage_num >= 2) 
+        //ステージ1をクリアしたなら
+        if (stage_num >= 1) 
         {
+            //ステージ2を出す
             ni.SetActive(true);
         }
-        if (stage_num >= 3) 
+        //ステージ2をクリアしたなら
+        if (stage_num >= 2) 
         {
+            //ステージ3を出す
             san.SetActive(true);
         }
-        if (stage_num >= 4)
+        //ステージ3をクリアしたなら
+        if (stage_num >= 3)
         {
+            //ステージ4を出す
             yon.SetActive(true);
         }
-        if (stage_num >= 5)
+        //ステージ4をクリアしたなら
+        if (stage_num >= 4)
         {
+            //ステージ5を出す
             go.SetActive(true);
         }
     }

@@ -4,21 +4,12 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Player")
+        // 障害物にぶつかったかどうかを確認
+        if (other.CompareTag("Player"))
         {
+            //ゲームオブジェクトを破壊
             Destroy(gameObject);
         }
     }

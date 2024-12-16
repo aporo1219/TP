@@ -108,60 +108,55 @@ public class CalorieTEXT : MonoBehaviour
         }
 
     }
-    public void OnCollisionEnter2D(Collision2D other)
-    {
-
-
-
-        if (other.gameObject.tag == "chili pepper")
-        {
-            CalorieTEXTInitival -= 10;
-
-        }
-        if (other.gameObject.tag == "chocolate")
-        {
-            CalorieTEXTInitival += 20;
-
-        }
-        if (other.gameObject.tag == "cookie")
-        {
-            CalorieTEXTInitival += 10;
-
-        }
-        if (other.gameObject.tag == "dumbbell")
-        {
-            CalorieTEXTInitival -= 30;
-
-        }
-
-        if (other.gameObject.tag == "pudding")
-        {
-            CalorieTEXTInitival += 30;
-
-        }
-
-        if(other.gameObject.tag == "Choco night")
-        {
-            CalorieTEXTInitival += 10;
-        }
-
-        if (other.gameObject.tag == "Pud night")
-        {
-            CalorieTEXTInitival += 15;
-        }
-
-        if (other.gameObject.tag == "Cook night")
-        {
-            CalorieTEXTInitival += 5;
-        }
-
-    }
+    
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "pitfall")
         {
             CalorieTEXTInitival -= 20;
 
+        }
+
+        if (collision.gameObject.tag == "chili pepper")
+        {
+            CalorieTEXTInitival -= 10;
+
+        }
+        if (collision.gameObject.tag == "chocolate")
+        {
+            CalorieTEXTInitival += 20;
+
+        }
+        if (collision.gameObject.tag == "cookie")
+        {
+            CalorieTEXTInitival += 10;
+
+        }
+        if (collision.gameObject.tag == "dumbbell")
+        {
+            CalorieTEXTInitival -= 30;
+
+        }
+
+        if (collision.gameObject.tag == "pudding")
+        {
+            CalorieTEXTInitival += 30;
+
+        }
+
+        if (collision.gameObject.tag == "Choco night")
+        {
+            CalorieTEXTInitival += 10;
+        }
+
+        if (collision.gameObject.tag == "Pud night")
+        {
+            CalorieTEXTInitival += 15;
+        }
+
+        if (collision.gameObject.tag == "Cook night")
+        {
+            CalorieTEXTInitival += 5;
         }
     }
 

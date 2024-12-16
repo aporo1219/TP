@@ -16,9 +16,10 @@ public class GoalTutorial : MonoBehaviour
             // 名前に「Player」が含まれるオブジェクトと当たったら
             if (other.name.Contains("Player"))
             {
+                //ゲームクリアシーンに移動
                 SceneManager.LoadScene("GAMECLEAR1");
                 //PlayerPrefsのSCOREに3という値を入れる
-                PlayerPrefs.SetInt("SCORE", 1);
+                PlayerPrefs.SetInt("SCORE", 0);
                 //PlayerPrefsをセーブする         
                 PlayerPrefs.Save();
             }

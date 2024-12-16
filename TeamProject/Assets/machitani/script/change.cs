@@ -7,6 +7,7 @@ public class change : MonoBehaviour
 {
     public void change_button()
     {
+        //タイトルシーンに移動
         SceneManager.LoadScene("Title");
     }
 }

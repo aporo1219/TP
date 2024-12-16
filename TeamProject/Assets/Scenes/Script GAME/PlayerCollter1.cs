@@ -26,7 +26,5 @@ public class PlayerCollter1 : MonoBehaviour
         {
             anim.SetBool("crouch", false);
         }
-        //‰EŒü‚«
-       // this.transform.position += new Vector3(STEP * Time.deltaTime, 0, 0);
     }
 }

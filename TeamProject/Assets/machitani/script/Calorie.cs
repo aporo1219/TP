@@ -15,6 +15,7 @@ public class Calorie : MonoBehaviour
         calobar = GameObject.Find("calobar").GetComponent<Slider>();
         calobar.maxValue = calo;
 
+        //カロリーゲージの初期値が100
         calobar.value = 100;
     }
 
@@ -25,11 +26,13 @@ public class Calorie : MonoBehaviour
 
         if(currentTime >=1.0f)
         {
+            //カロリーゲージが2ずつ減っていく
             calobar.value -= 2;
             currentTime = 0;
         }
         if (calobar.value == 0)
         {
+            //ゲームオーバー画面に移動
             SceneManager.LoadScene("GAMEOVER1");
         }
     }

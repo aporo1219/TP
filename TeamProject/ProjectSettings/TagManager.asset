@@ -26,6 +26,7 @@ TagManager:
   - Choco night
   - Pud night
   - Cook night
+  - Text
   layers:
   - Default
   - TransparentFX

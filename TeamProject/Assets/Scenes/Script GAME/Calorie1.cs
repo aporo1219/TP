@@ -30,6 +30,7 @@ public class Calorie1 : MonoBehaviour
        
         if (currentTime >=1.0f)
         {
+            //2‚¸‚ÂŒ¸‚Á‚Ä‚¢‚­
             calobar.value -= 2;
             currentTime = 0;
         }

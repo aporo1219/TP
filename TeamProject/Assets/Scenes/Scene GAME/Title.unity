@@ -545,7 +545,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 0.6933962, b: 0.7621673, a: 1}
+  m_BackGroundColor: {r: 1, g: 0.6839622, b: 0.8133648, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -843,7 +843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5776292182470366578, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -269.22
+      value: -339.54
       objectReference: {fileID: 0}
     - target: {fileID: 5776292182470366579, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -891,19 +891,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5776292183034468704, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1282.79
+      value: 1168
       objectReference: {fileID: 0}
     - target: {fileID: 5776292183034468704, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 718.08
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 5776292183034468704, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -26
+      value: -0.000030518
       objectReference: {fileID: 0}
     - target: {fileID: 5776292183034468704, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0013733
+      value: -0.057343
       objectReference: {fileID: 0}
     - target: {fileID: 5776292183034468705, guid: 857b398cfab5d494fada838e61b0b7f4, type: 3}
       propertyPath: m_Sprite
@@ -1142,7 +1142,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 358.73, y: -269.41}
+  m_AnchoredPosition: {x: 358.72998, y: -343.73}
   m_SizeDelta: {x: 290.38, y: 179.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1382319228
@@ -1480,7 +1480,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 644.88, y: 367.41}
+  m_AnchoredPosition: {x: 651.96, y: 344.94}
   m_SizeDelta: {x: 310.23, y: 210.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1781729531

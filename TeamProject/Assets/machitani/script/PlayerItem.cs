@@ -6,51 +6,62 @@ using UnityEngine.UI;
 public class PlayerItem : MonoBehaviour
 {
     public Slider calobar;
-    // Start is called before the first frame update
-    void Start()
+
+    void OnTriggerEnter2D(Collider2D collision)
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "chili pepper")
+        //夜のチョコに当たったら
+        if (collision.gameObject.tag == "Choco night")
         {
-            calobar.value -= 10;
-        }
-
-        if (other.gameObject.tag == "chocolate")
-        {
-            calobar.value += 20;
-        }
-
-        if (other.gameObject.tag == "cookie")
-        {
+            //カロリーゲージを10増やす
             calobar.value += 10;
         }
-
-        if (other.gameObject.tag == "dumbbell")
+        //夜のプリンに当たったら
+        if (collision.gameObject.tag == "Pud night")
         {
+            //カロリーゲージを15増やす
+            calobar.value += 15;
+        }
+        //夜のクッキーに当たったら
+        if (collision.gameObject.tag == "Cook night")
+        {
+            //カロリーゲージを５増やす
+            calobar.value += 5;
+        }
+        //落とし穴に当たったら
+        if (collision.gameObject.tag == "pitfall")
+        {
+            //カロリーゲージを20減らす
+            calobar.value -= 20;
+        }
+        //唐辛子に当たったら
+        if (collision.gameObject.tag == "chili pepper")
+        {
+            //カロリーゲージを10減らす
+            calobar.value -= 10;
+        }
+        //チョコレートに当たったら
+        if (collision.gameObject.tag == "chocolate")
+        {
+            //カロリーゲージを20増やす
+            calobar.value += 20;
+        }
+        //クッキーに当たったら
+        if (collision.gameObject.tag == "cookie")
+        {
+            //カロリーゲージを10増やす
+            calobar.value += 10;
+        }
+        //ダンベルに当たったら
+        if (collision.gameObject.tag == "dumbbell")
+        {
+            //カロリーゲージを30減らす
             calobar.value -= 30;
         }
-
-        if (other.gameObject.tag == "pudding")
+        //プリンに当たったら
+        if (collision.gameObject.tag == "pudding")
         {
+            //カロリーゲージを30増やす
             calobar.value += 30;
-        }
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.name == "pitfall")
-        {
-            calobar.value -= 20;
         }
     }
 }

@@ -22,47 +22,49 @@ public class text : MonoBehaviour
 
     void Hoge()
     {
+        //3秒後テキスト変更
         textUI.text = "強制横スクロールだよ";
     }
 
     void Ho()
     {
+        //7秒後テキスト変更
         textUI.text = "↑徐々にカロリーが減るので";
     }
 
     void og()
     {
+        //10秒後テキスト変更
         textUI.text = "回復アイテムを拾おう";
     }
 
     void Hog()
     {
+        //14秒後テキスト変更
         textUI.text = "これらのアイテムは避けよう";
     }
 
     void ge()
     {
+        //18秒後テキスト変更
         textUI.text = "カロリーが0になったら";
     }
 
     void oge()
     {
+        //21秒後テキスト変更
         textUI.text = "ゲームオーバーだよ";
     }
 
     void machi()
     {
+        //24秒後テキスト変更
         textUI.text = "0にならないように";
     }
 
     void gema()
     {
+        //26秒後テキスト変更
         textUI.text = "ゴールを目指そう！";
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -26,11 +26,14 @@ public class TutorialCalorie : MonoBehaviour
 
         if (currentTime >= 1.0f)
         {
+            //5ずつ減っていく
             calobar.value -= 5;
             currentTime = 0;
         }
+        //カロリーが0になったら
         if (calobar.value == 0)
         {
+            //テキストを表示
             calo0text.SetActive(true);
         }
     }

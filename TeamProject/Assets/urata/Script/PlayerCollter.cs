@@ -6,7 +6,7 @@ public class PlayerCollter : MonoBehaviour
 {
     //歩く
     private float STEP = 3.0f;
-    //しゃがむ
+    //しゃがむアニメーション
     private Animator anim = null;
 
     void Start()

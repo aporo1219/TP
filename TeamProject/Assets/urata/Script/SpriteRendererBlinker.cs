@@ -62,10 +62,6 @@ public class SpriteRendererBlinker : MonoBehaviour
         return;
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        
-    }
     //点滅させる処理
     IEnumerator _hit()
     {

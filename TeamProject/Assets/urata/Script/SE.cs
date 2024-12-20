@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class SE : MonoBehaviour
 {
+    public bool DontDestroyEnabled = true;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (DontDestroyEnabled)
+        {
+            // Sceneを遷移してもオブジェクトが消えないようにする
+            DontDestroyOnLoad(this);
+        }
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -17,8 +21,7 @@ public class SE : MonoBehaviour
         {
             GetComponent<AudioSource>().Play();
         }
-
-        if(Input.GetMouseButtonUp(0))
+        else if(Input.GetMouseButtonUp(0))
         {
             GetComponent<AudioSource>().Stop();
         }

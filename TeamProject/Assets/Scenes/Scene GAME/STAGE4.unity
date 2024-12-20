@@ -3406,9 +3406,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1442254798}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae128ea1b1d9fd34ebd5a90411b9fc99, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b250bbd8edad954fbf9a37900f862a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: STAGE
 --- !u!1 &1484167115 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3580175863467041725, guid: 0c116b1937f694d439dba6f4b5ac257d, type: 3}

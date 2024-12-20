@@ -930,6 +930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce8b11464e199c42b16578b010e7bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DontDestroyEnabled: 1
 --- !u!1 &662812498
 GameObject:
   m_ObjectHideFlags: 0
@@ -1973,9 +1974,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1565609026}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98f521fe5d8511641a5ea22042274999, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b250bbd8edad954fbf9a37900f862a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: operation
 --- !u!1001 &1582814015
 PrefabInstance:
   m_ObjectHideFlags: 0

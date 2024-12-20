@@ -26,7 +26,7 @@ public class StartParticle : MonoBehaviour
 			SoundManager.soundManager.SEPlay(SEType.recovery);
 		}
 
-		if (other.gameObject.tag == "cookie")//クッキー
+		if (other.gameObject.tag == "cookie" || other.gameObject.tag == "Cook night")//クッキー
 		{
 			// パーティクルシステムのインスタンスを生成する。
 			ParticleSystem newParticle = Instantiate(particle);

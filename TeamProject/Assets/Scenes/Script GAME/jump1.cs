@@ -44,7 +44,7 @@ public class jump1 : MonoBehaviour
         if(collision.gameObject.tag@=="empty ca")
         {
             //ŠÊ‚É“–‚½‚Á‚½‚çƒWƒƒƒ“ƒv—Í‚ª’á‰º‚·‚éˆ—
-            jumpPower = 4;
+            jumpPower = 6;
             Invoke(nameof(Timer), 4.0f);
         }
     }

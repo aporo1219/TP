@@ -17,7 +17,7 @@ public class CalorieTEXT : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0;//Aボタン押されるまで停止
-        CalorieTEXTInitival = 100;
+        CalorieTEXTInitival = 100;//カロリーテキストの初期化
         StageInfor = 0;//クリアしたステージによってリザルトのスイーツの絵を変える
         distance = 37;//距離の初期化
     }
@@ -27,6 +27,7 @@ public class CalorieTEXT : MonoBehaviour
     // Update is called once per frame
     void Update()
     { 
+        //Aボタンを押したらゲームスタート
         if(Input.GetKeyDown(KeyCode.A))
         {
             Time.timeScale = 1;
@@ -39,9 +40,7 @@ public class CalorieTEXT : MonoBehaviour
         //時間経過(ステージ１）
         if(SceneManager.GetActiveScene().name == "STAGE1")
         {
-          
-         
-          if (Ctime >= 1.0f)
+         　if (Ctime >= 1.0f)
           {
             CalorieTEXTInitival -= 2;
             Ctime = 0;
@@ -109,6 +108,7 @@ public class CalorieTEXT : MonoBehaviour
 
     }
     
+    //オブジェクトに当たった時の処理
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "pitfall")
@@ -160,7 +160,7 @@ public class CalorieTEXT : MonoBehaviour
         }
     }
 
-   
+   //ゲームオーバー関数
     private void GAMEOVER()
     {
         SceneManager.LoadScene("GameOver1");

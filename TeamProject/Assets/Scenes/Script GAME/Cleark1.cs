@@ -12,6 +12,8 @@ public class Cleark1: MonoBehaviour
 
     
 
+    
+
     private void Start()
     {
         // 初期化（出現）
@@ -19,12 +21,11 @@ public class Cleark1: MonoBehaviour
         isDisplayed = false;
         objectToShow.SetActive(false); // ゲーム開始時にオブジェクトを非表示にする
 
-       
-
     }
 
     private void Update()
     {
+       
         //出現の処理
         if (!isDisplayed)
         {

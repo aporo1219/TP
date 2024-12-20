@@ -16,7 +16,7 @@ public class BackMove1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();//ˆÚ“®ŠÖ”
+        Move();//”wŒiˆÚ“®ŠÖ”
     }
     void Move()
     {

@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class PlayerCollter1 : MonoBehaviour
 {
-    //歩く
-   // private float STEP = 3.0f;
+    
     //しゃがむ
     private Animator anim = null;
 
     void Start()
     {
+        //しゃがむアニメーションの初期化
         anim = GetComponent<Animator>();
     }
 
     void Update()
     {
+        //キーの代入
         float horizontalKey = Input.GetAxis("Horizontal");
-
+        //下矢印キーを押したらしゃがむ
         if (horizontalKey < 0)
         {
             anim.SetBool("crouch", true);

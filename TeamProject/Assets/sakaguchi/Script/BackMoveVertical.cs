@@ -10,6 +10,11 @@ public class BackMoveVertical : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        MoveVertical();//”wŒiˆÚ“®icj‚ÌŠÖ”
+    }
+
+    void MoveVertical()
+    {
         transform.position -= new Vector3(0, Time.deltaTime * speed);//‰º‚ÉŠG‚ğ“®‚©‚·
 
         if(transform.position.y <= -8.6)//ŠG‚ª‰º‚Ü‚Ås‚Á‚½‚çã‚É–ß‚é

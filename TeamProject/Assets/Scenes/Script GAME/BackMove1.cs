@@ -6,11 +6,12 @@ public class BackMove1 : MonoBehaviour
 {
     [SerializeField]
     float scrollSpeed = -1;//スクロールスピード
-    Vector3 cameraRectMin;
+    Vector3 CameraRectMin;
     // Start is called before the first frame update
     void Start()
     {
-        cameraRectMin = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, Camera.main.transform.position.z));//初期化
+        //カメラの位置の初期化
+        CameraRectMin = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, Camera.main.transform.position.z));
     }
 
     // Update is called once per frame
@@ -22,9 +23,9 @@ public class BackMove1 : MonoBehaviour
     {
         transform.Translate(Vector3.right * scrollSpeed * Time.deltaTime);   //X軸方向にスクロール
         //カメラの左端から完全に出たら、右端に瞬間移動
-        if (transform.position.x < (cameraRectMin.x - Camera.main.transform.position.x) * 2)
+        if (transform.position.x < (CameraRectMin.x - Camera.main.transform.position.x) * 2)
         {
-            transform.position = new Vector2((Camera.main.transform.position.x - cameraRectMin.x) * 2, transform.position.y);
+            transform.position = new Vector2((Camera.main.transform.position.x - CameraRectMin.x) * 2, transform.position.y);
         }
     }
 }

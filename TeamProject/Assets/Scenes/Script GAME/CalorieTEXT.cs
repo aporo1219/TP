@@ -26,30 +26,38 @@ public class CalorieTEXT : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    { 
+    {
         //Aボタンを押したらゲームスタート
-        if(Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             Time.timeScale = 1;
         }
-        CalorieText.text = "カロリー:" + CalorieTEXTInitival + "Kcal".ToString();//カロリーのテキスト文字をカロリーの初期値におく
+        //カロリーテキスト関連の関数
+        CalorieCharacter();
+
+        //距離関連の関数
+        RemainingDistance();
+    }
+    //カロリーテキスト関連の関数
+    public void CalorieCharacter()
+    {
+        //カロリーのテキスト文字の表示
+        CalorieText.text = "カロリー:" + CalorieTEXTInitival + "Kcal".ToString();
         Ctime += Time.deltaTime;//カロリー文字の設定
 
-        distance -= Time.deltaTime;//残り距離の計算
-        RD.text = "お店までの距離は" + distance + "メートルです。".ToString();//残り距離のテキスト
         //時間経過(ステージ１）
-        if(SceneManager.GetActiveScene().name == "STAGE1")
+        if (SceneManager.GetActiveScene().name == "STAGE1")
         {
-         　if (Ctime >= 1.0f)
-          {
-            CalorieTEXTInitival -= 2;
-            Ctime = 0;
-           
-            StageInfor = 0;
-          }
+            if (Ctime >= 1.0f)
+            {
+                CalorieTEXTInitival -= 2;
+                Ctime = 0;
+
+                StageInfor = 0;
+            }
         }
         //時間経過(ステージ2）
-        if(SceneManager.GetActiveScene().name == "STAGE2")
+        if (SceneManager.GetActiveScene().name == "STAGE2")
         {
             if (Ctime >= 1.0f)
             {
@@ -91,10 +99,7 @@ public class CalorieTEXT : MonoBehaviour
 
                 StageInfor = 4;
             }
-        }
-
-
-        
+        } 
         //上限を100
         if (CalorieTEXTInitival >= 100.0f)
         {
@@ -105,9 +110,15 @@ public class CalorieTEXT : MonoBehaviour
         {
             GAMEOVER();
         }
-
     }
-    
+
+    //距離の関数
+    public void RemainingDistance()
+    {
+        distance -= Time.deltaTime;//残り距離の計算
+        RD.text = "お店までの距離は" + distance + "メートルです。".ToString();//残り距離のテキスト
+    }
+
     //オブジェクトに当たった時の処理
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -164,8 +175,5 @@ public class CalorieTEXT : MonoBehaviour
     private void GAMEOVER()
     {
         SceneManager.LoadScene("GameOver1");
-
     }
-
-
 }

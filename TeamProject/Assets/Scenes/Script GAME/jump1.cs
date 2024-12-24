@@ -52,7 +52,6 @@ public class jump1 : MonoBehaviour
     public void Timer()
     {
         jumpPower = 8;
-        Debug.Log("ƒWƒƒƒ“ƒv—Í‚ª–ß‚é");
         
         
     }

@@ -12,7 +12,7 @@ public class ClearkMove1 : MonoBehaviour
     {
         //初期化
         Vector3 direction = new Vector3((float)0.8, (float)-3.09, 0);//店員の目的地の設定
-        speed = 1.0f;//店員のスピード
+        speed = 0.5f;//店員のスピード
         onestep = 0.0f;
     }
 

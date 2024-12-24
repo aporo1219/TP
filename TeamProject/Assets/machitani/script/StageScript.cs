@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class StageScript : MonoBehaviour
 {
     public int stage_num;
-    public GameObject ni;
-    public GameObject san;
-    public GameObject yon;
-    public GameObject go;
+    public GameObject Stageone;
+    public GameObject Stagetwo;
+    public GameObject Stagethree;
+    public GameObject Stagefour;
+    public GameObject Stagefive;
 
     // Start is called before the first frame update
     void Start()
@@ -24,25 +25,25 @@ public class StageScript : MonoBehaviour
         if (stage_num >= 1) 
         {
             //ステージ2を出す
-            ni.SetActive(true);
+            Stagetwo.SetActive(true);
         }
         //ステージ2をクリアしたなら
         if (stage_num >= 2) 
         {
             //ステージ3を出す
-            san.SetActive(true);
+            Stagethree.SetActive(true);
         }
         //ステージ3をクリアしたなら
         if (stage_num >= 3)
         {
             //ステージ4を出す
-            yon.SetActive(true);
+            Stagefour.SetActive(true);
         }
         //ステージ4をクリアしたなら
         if (stage_num >= 4)
         {
             //ステージ5を出す
-            go.SetActive(true);
+            Stagefive.SetActive(true);
         }
     }
 }

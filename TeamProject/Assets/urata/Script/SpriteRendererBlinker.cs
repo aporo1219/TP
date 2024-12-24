@@ -15,12 +15,6 @@ public class SpriteRendererBlinker : MonoBehaviour
     //当たったかどうかのフラグ
     bool isHit;
 
-    //障害物
-    public GameObject chilipepper;//唐辛子
-    public GameObject dumbbell;//ダンベル
-    public GameObject pitfall;//落とし穴
-    public GameObject emptyca;//空き缶
-
     private void Start()
     {
         //SpriteRenderer格納
@@ -32,29 +26,23 @@ public class SpriteRendererBlinker : MonoBehaviour
     //衝突時の処理
     private void OnTriggerEnter2D(Collider2D col)
     {
-        //落とし穴
+                                  //落とし穴
         if (col.gameObject.tag == "pitfall")
         {
             //コルーチンを開始
             StartCoroutine(_hit());
-        }
-
-        //唐辛子
-        if (col.gameObject.tag == "chili pepper")
+        }                               //唐辛子
+        else if (col.gameObject.tag == "chili pepper")
         {
             //コルーチンを開始
             StartCoroutine(_hit());
-        }
-
-        //ダンベル
-        if (col.gameObject.tag == "dumbbell")
+        }                              //ダンベル
+        else if (col.gameObject.tag == "dumbbell")
         {
             //コルーチンを開始
             StartCoroutine(_hit());
-        }
-
-        //空き缶
-        if (col.gameObject.tag == "empty ca")
+        }                               //空き缶
+        else if (col.gameObject.tag == "empty ca")
         {
             //コルーチンを開始
             StartCoroutine(_hit());

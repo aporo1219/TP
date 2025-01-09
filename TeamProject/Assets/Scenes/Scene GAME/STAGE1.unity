@@ -976,8 +976,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 017a6ae548936ce43b009429c8b4c7a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  calobar: {fileID: 794478269}
-  calo: 100
 --- !u!1 &817192794 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2947317340852676893, guid: 93f954396c3e1d045a317f114dd29da2, type: 3}
@@ -2724,8 +2722,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0fe5ca924165634aa49577d249a54a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToShowS: {fileID: 1075181333}
-  displayDelayS: 30
+  ObjectToShowShop: {fileID: 1075181333}
+  DisplayDelayShop: 30
 --- !u!114 &2039551925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2738,8 +2736,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c4aeb0b5edbd584ea005b0023236945, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToShow: {fileID: 173064383}
-  displayDelay: 15
+  ObjectToShowCleark: {fileID: 173064383}
+  DisplayDelay: 15
 --- !u!114 &2039551926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2862,6 +2860,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToShowGS: {fileID: 2049499154}
   displayDelayGS: 2
+  timerGS: 0
+  isDisplayedGS: 0
 --- !u!4 &2049499157
 Transform:
   m_ObjectHideFlags: 0

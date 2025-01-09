@@ -4,20 +4,20 @@ using System.Collections.Generic;
 
 public class Shop1 : MonoBehaviour
 {
-    public GameObject objectToShowS;
-    public float displayDelayS = 30.0f; // 表示までの待機時間（秒）
+    public GameObject ObjectToShowShop;
+    public float DisplayDelayShop = 30.0f; // 表示までの待機時間（秒）
 
-    private float timerS;
-    private bool isDisplayedS;
+    private float TimerShop;
+    private bool IsDisplayedShop;
 
 
 
     private void Start()
     {
         // 初期化（出現）
-        timerS = 0.0f;
-        isDisplayedS = false;
-        objectToShowS.SetActive(false); // ゲーム開始時にオブジェクトを非表示にする
+        TimerShop = 0.0f;
+        IsDisplayedShop = false;
+        ObjectToShowShop.SetActive(false); // ゲーム開始時にオブジェクトを非表示にする
 
 
 
@@ -26,15 +26,15 @@ public class Shop1 : MonoBehaviour
     private void Update()
     {
         //出現の処理
-        if (!isDisplayedS)
+        if (!IsDisplayedShop)
         {
-            timerS += Time.deltaTime; // 経過時間をカウント
+            TimerShop += Time.deltaTime; // 経過時間をカウント
 
-            if (timerS >= displayDelayS)
+            if (TimerShop >= DisplayDelayShop)
             {
                 // 一定時間経過したらオブジェクトを表示
-                objectToShowS.SetActive(true);
-                isDisplayedS= true;
+                ObjectToShowShop.SetActive(true);
+                IsDisplayedShop= true;
 
             }
         }

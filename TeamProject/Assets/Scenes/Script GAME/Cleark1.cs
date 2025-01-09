@@ -4,38 +4,36 @@ using System.Collections.Generic;
 
 public class Cleark1: MonoBehaviour
 {
-    public GameObject objectToShow;
-    public float displayDelay = 2.0f; // 表示までの待機時間（秒）
-
-    private float timer;
-    private bool isDisplayed;
-
-    
+    public GameObject ObjectToShowCleark;
+    public float DisplayDelay = 2.0f; // 表示までの待機時間（秒）
+    private float TimerCleark;
+    private bool IsDisplayedCleark;
 
     
 
     private void Start()
     {
         // 初期化（出現）
-        timer = 0.0f;
-        isDisplayed = false;
-        objectToShow.SetActive(false); // ゲーム開始時にオブジェクトを非表示にする
+        TimerCleark = 0.0f;
+        IsDisplayedCleark = false;
+        ObjectToShowCleark.SetActive(false); // ゲーム開始時にオブジェクトを非表示にする
+
+       
 
     }
 
     private void Update()
     {
-       
         //出現の処理
-        if (!isDisplayed)
+        if (!IsDisplayedCleark)
         {
-            timer += Time.deltaTime; // 経過時間をカウント
+            TimerCleark += Time.deltaTime; // 経過時間をカウント
 
-            if (timer >= displayDelay)
+            if (TimerCleark >= DisplayDelay)
             {
                 // 一定時間経過したらオブジェクトを表示
-                objectToShow.SetActive(true);
-                isDisplayed = true;
+                ObjectToShowCleark.SetActive(true);
+                IsDisplayedCleark = true;
                
             }
         }

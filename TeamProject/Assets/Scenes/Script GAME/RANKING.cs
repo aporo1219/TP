@@ -23,6 +23,7 @@ public class RANKING : MonoBehaviour
     private int HC4;//ハイカロリー数の変数
     private int HC5;//ハイカロリー数の変数
 
+    
 
     public void Start()
     {
@@ -44,120 +45,148 @@ public class RANKING : MonoBehaviour
     
     public void Update()
     {
+       
         //クリアしたステージによってのベストカロリー量の表示
         if (CalorieTEXT.StageInfor == 0)
-        {
-            //文字の表示
-            HCT1.SetActive(true);
-            highcalorieTEXT.text = "カロリーの最高残量は" + HC1 + "です。".ToString();
-           if (Input.GetKey(KeyCode.Space))//スペースが押されたらカロリー量のリセット
-           {
-                PlayerPrefs.DeleteKey("HIGHCALORIE1");
-           }
-           
-           
+        { 
+            RecoadStage1();
         }
         if (CalorieTEXT.StageInfor == 1)
         {
-            //文字の表示
-            HCT2.SetActive(true);
-            highcalorieTEXT2.text = "カロリーの最高残量は" + HC2 + "です。".ToString();
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                PlayerPrefs.DeleteKey("HIGHCALORIE2");
-            }
+            RecoadStage2();
         }
         if (CalorieTEXT.StageInfor == 2)
         {
-            //文字の表示
-            HCT3.SetActive(true);
-            highcalorieTEXT3.text = "カロリーの最高残量は" + HC3 + "です。".ToString();
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                PlayerPrefs.DeleteKey("HIGHCALORIE3");
-            }
+            RecoadStage3();
         }
         if (CalorieTEXT.StageInfor == 3)
         {
-            //文字の表示
-            HCT4.SetActive(true);
-            highcalorieTEXT4.text = "カロリーの最高残量は" + HC4 + "です。".ToString();
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                PlayerPrefs.DeleteKey("HIGHCALORIE4");
-            }
+            RecoadStage4();
         }
         if (CalorieTEXT.StageInfor == 4)
         {
-            //文字の表示
-            HCT5.SetActive(true);
-            highcalorieTEXT5.text = "カロリーの最高残量は" + HC5 + "です。".ToString();
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                PlayerPrefs.DeleteKey("HIGHCALORIE5");
-            }
+            RecoadStage5();
+        }
+    }
+
+    public void RecoadStage1 ()
+    {
+        //文字の表示
+        HCT1.SetActive(true);
+        highcalorieTEXT.text = "カロリーの最高残量は" + HC1 + "です。".ToString();
+        if (Input.GetKey(KeyCode.Space))//スペースが押されたらカロリー量のリセット
+        {
+            PlayerPrefs.DeleteKey("HIGHCALORIE1");
         }
         //ハイカロリーより現在のカロリー量が上回ったとき（ステージ１）
         if (CalorieTEXT.CalorieTEXTInitival > HC1)
         {
             HC1 = (int)CalorieTEXT.CalorieTEXTInitival;//更新処理
             highcalorieTEXT.text = "カロリーの最高残量は" + HC1 + "です。".ToString();//ハイカロリー量の表示
-            PlayerPrefs.SetInt("HIGHCALORIE1", HC1); 
+            PlayerPrefs.SetInt("HIGHCALORIE1", HC1);//新しい記録をPlayerPrefsに記録
+            //スペースを押したら記録のリセット
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 PlayerPrefs.DeleteKey("HIGHCALORIE1");
             }
+        }
+    }
+
+    public void RecoadStage2()
+    {
+        //文字の表示
+        HCT2.SetActive(true);
+        highcalorieTEXT2.text = "カロリーの最高残量は" + HC2 + "です。".ToString();
+        //スペースを押したら記録のリセット
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            PlayerPrefs.DeleteKey("HIGHCALORIE2");
         }
         //ハイカロリーより現在のカロリー量が上回ったとき（ステージ２）
         if (CalorieTEXT.CalorieTEXTInitival > HC2)
         {
             HC2 = (int)CalorieTEXT.CalorieTEXTInitival;//更新処理
             highcalorieTEXT.text = "カロリーの最高残量は" + HC2 + "です。".ToString(); //ハイカロリー量の表示
-            PlayerPrefs.SetInt("HIGHCALORIE2", HC2); 
+            PlayerPrefs.SetInt("HIGHCALORIE2", HC2);//新しい記録をPlayerPrefsに記録
+            //スペースを押したら記録のリセット
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 PlayerPrefs.DeleteKey("HIGHCALORIE2");
             }
+        }
+    }
+
+    public void RecoadStage3()
+    {
+        //文字の表示
+        HCT3.SetActive(true);
+        highcalorieTEXT3.text = "カロリーの最高残量は" + HC3 + "です。".ToString();
+        //スペースを押したら記録のリセット
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            PlayerPrefs.DeleteKey("HIGHCALORIE3");
         }
         //ハイカロリーより現在のカロリー量が上回ったとき（ステージ３）
         if (CalorieTEXT.CalorieTEXTInitival > HC3)
         {
             HC3 = (int)CalorieTEXT.CalorieTEXTInitival;//更新処理
             highcalorieTEXT.text = "カロリーの最高残量は" + HC3 + "です。".ToString();//ハイカロリー量の表示
-            PlayerPrefs.SetInt("HIGHCALORIE3", HC3); 
+            PlayerPrefs.SetInt("HIGHCALORIE3", HC3);//新しい記録をPlayerPrefsに記録
+            //スペースを押したら記録のリセット
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 PlayerPrefs.DeleteKey("HIGHCALORIE3");
             }
+        }
+    }
+
+    public void RecoadStage4()
+    {
+        //文字の表示
+        HCT4.SetActive(true);
+        highcalorieTEXT4.text = "カロリーの最高残量は" + HC4 + "です。".ToString();
+        //スペースを押したら記録のリセット
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            PlayerPrefs.DeleteKey("HIGHCALORIE4");
         }
         //ハイカロリーより現在のカロリー量が上回ったとき（ステージ４）
         if (CalorieTEXT.CalorieTEXTInitival > HC4)
         {
             HC4 = (int)CalorieTEXT.CalorieTEXTInitival;//更新処理
             highcalorieTEXT.text = "カロリーの最高残量は" + HC4 + "です。".ToString();//ハイカロリー量の表示
-            PlayerPrefs.SetInt("HIGHCALORIE4", HC4); 
+            PlayerPrefs.SetInt("HIGHCALORIE4", HC4);//新しい記録をPlayerPrefsに記録
+            //スペースを押したら記録のリセット
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 PlayerPrefs.DeleteKey("HIGHCALORIE4");
             }
+        }
+    }
+
+    public void RecoadStage5()
+    {
+        //文字の表示
+        HCT5.SetActive(true);
+        highcalorieTEXT5.text = "カロリーの最高残量は" + HC5 + "です。".ToString();
+        //スペースを押したら記録のリセット
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            PlayerPrefs.DeleteKey("HIGHCALORIE5");
         }
         //ハイカロリーより現在のカロリー量が上回ったとき（ステージ５）
         if (CalorieTEXT.CalorieTEXTInitival > HC5)
         {
             HC5 = (int)CalorieTEXT.CalorieTEXTInitival;//更新処理
             highcalorieTEXT.text = "カロリーの最高残量は" + HC5 + "です。".ToString();//ハイカロリー量の表示
-            PlayerPrefs.SetInt("HIGHCALORIE5", HC5); 
+            PlayerPrefs.SetInt("HIGHCALORIE5", HC5);//新しい記録をPlayerPrefsに記録
+            //スペースを押したら記録のリセット
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 PlayerPrefs.DeleteKey("HIGHCALORIE5");
             }
         }
-        
-
     }
-
-
-
 
 }
 

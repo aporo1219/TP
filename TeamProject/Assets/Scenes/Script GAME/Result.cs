@@ -16,6 +16,9 @@ public class Result : MonoBehaviour
     //テキストの変数
     public Text resultcalo;
 
+    
+    
+
 
     void Start()
     {
@@ -29,9 +32,10 @@ public class Result : MonoBehaviour
 
      void Update()
     {
+       
         //文字の表示
-        resultcalo.text = "カロリーの残量は" + CalorieTEXT.CalorieTEXTInitival + "kcalです。";//文字の表示
-
+        resultcalo.text = "カロリーの残量は" + CalorieTEXT.CalorieTEXTInitival + "kcalです。";
+　　　　 
         if(CalorieTEXT.StageInfor == 0)//ステージ1のスイーツの表示
         {
             D.SetActive(true);
@@ -52,5 +56,7 @@ public class Result : MonoBehaviour
         {
             C.SetActive(true);
         }
-    }
+   　}
+
 }
+

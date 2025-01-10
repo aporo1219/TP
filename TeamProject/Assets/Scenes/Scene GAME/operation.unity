@@ -432,10 +432,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flashInterval: 0.02
   loopCount: 4
-  chilipepper: {fileID: 1867212974}
-  dumbbell: {fileID: 556749500}
-  pitfall: {fileID: 1093965301}
-  emptyca: {fileID: 0}
 --- !u!224 &402443535 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3665473860994911622, guid: 0c3b1aef19090574c98c62e2b57e7976, type: 3}
@@ -739,11 +735,6 @@ PrefabInstance:
     - {fileID: 8799641735616636381, guid: 33019b72796908f41808315489aa9efd, type: 3}
     - {fileID: 8799641735616636376, guid: 33019b72796908f41808315489aa9efd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 33019b72796908f41808315489aa9efd, type: 3}
---- !u!1 &556749500 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8799641735616636380, guid: 33019b72796908f41808315489aa9efd, type: 3}
-  m_PrefabInstance: {fileID: 556749499}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &563410682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -869,6 +860,10 @@ PrefabInstance:
     - target: {fileID: 3385666857697250942, guid: 7092adbad1bbdc04584dddc04fce03b5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385666857697250943, guid: 7092adbad1bbdc04584dddc04fce03b5, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3385666857697250940, guid: 7092adbad1bbdc04584dddc04fce03b5, type: 3}
@@ -1140,6 +1135,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3910077491994525772, guid: c9db302960cbe3a4bac02668c40e3204, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 2457001718151091046, guid: 8f6113ef5f92b8545b3a7acc2726fd76, type: 2}
     - target: {fileID: 3910077491994525774, guid: c9db302960cbe3a4bac02668c40e3204, type: 3}
       propertyPath: m_Name
       value: SoundManager
@@ -1619,11 +1618,6 @@ PrefabInstance:
     - {fileID: 29515741201183679, guid: 7204481f7b423474b84056ac1476c4f0, type: 3}
     - {fileID: 29515741201183678, guid: 7204481f7b423474b84056ac1476c4f0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7204481f7b423474b84056ac1476c4f0, type: 3}
---- !u!1 &1093965301 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 29515741201183676, guid: 7204481f7b423474b84056ac1476c4f0, type: 3}
-  m_PrefabInstance: {fileID: 1093965300}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1123910473 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 583101918809294561, guid: 4edbdfc922478e64abf461981c4d2176, type: 3}
@@ -2635,11 +2629,6 @@ PrefabInstance:
     - {fileID: 5385805805735958405, guid: 745468c5147f1dc4caaf933e35f0bcb4, type: 3}
     - {fileID: 5385805805735958406, guid: 745468c5147f1dc4caaf933e35f0bcb4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 745468c5147f1dc4caaf933e35f0bcb4, type: 3}
---- !u!1 &1867212974 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5385805805735958402, guid: 745468c5147f1dc4caaf933e35f0bcb4, type: 3}
-  m_PrefabInstance: {fileID: 1867212973}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1896636844
 GameObject:
   m_ObjectHideFlags: 0

@@ -1968,6 +1968,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3910077491994525772, guid: c9db302960cbe3a4bac02668c40e3204, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -6348803186850923408, guid: 8f6113ef5f92b8545b3a7acc2726fd76, type: 2}
     - target: {fileID: 3910077491994525773, guid: c9db302960cbe3a4bac02668c40e3204, type: 3}
       propertyPath: meChime
       value: 
@@ -2597,10 +2601,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flashInterval: 0.02
   loopCount: 4
-  chilipepper: {fileID: 879037475}
-  dumbbell: {fileID: 943010864}
-  pitfall: {fileID: 1019135563}
-  emptyca: {fileID: 0}
 --- !u!61 &1995175033
 BoxCollider2D:
   m_ObjectHideFlags: 0

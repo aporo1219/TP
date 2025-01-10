@@ -17,9 +17,9 @@ public class PlayerCollter1 : MonoBehaviour
     void Update()
     {
         //キーの代入
-        float horizontalKey = Input.GetAxis("Horizontal");
+        //float horizontalKey = Input.GetKey(KeyCode.S);
         //下矢印キーを押したらしゃがむ
-        if (horizontalKey < 0)
+        if (Input.GetKey(KeyCode.S))
         {
             anim.SetBool("crouch", true);
         }

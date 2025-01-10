@@ -26,7 +26,7 @@ public class STAGE2Calorie : MonoBehaviour
         if (currentTime >= 1.0f)
         {
             //カロリーゲージが8ずつ減っていく
-            calobar.value -= 8;
+            calobar.value -= 5;
             currentTime = 0;
         }
         //カロリーゲージが0になったら

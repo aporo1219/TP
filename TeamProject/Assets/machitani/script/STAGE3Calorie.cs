@@ -25,7 +25,7 @@ public class STAGE3Calorie : MonoBehaviour
 
         if (currentTime >= 1.0f)
         {
-            calobar.value -= 5;
+            calobar.value -= 2;
             currentTime = 0;
         }
         //カロリーゲージが0になったら

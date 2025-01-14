@@ -17,9 +17,8 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
-        float horizontalKey = Input.GetAxis("Horizontal");
-
-        if (horizontalKey < 0)
+        //‰º–îˆóƒL[‚ð‰Ÿ‚µ‚½‚ç‚µ‚á‚ª‚Þ
+        if (Input.GetKey(KeyCode.S))
         {
             anim.SetBool("crouch", true);
         }
@@ -28,6 +27,6 @@ public class PlayerMove : MonoBehaviour
             anim.SetBool("crouch", false);
         }
         //‰EŒü‚«
-         this.transform.position += new Vector3(STEP * Time.deltaTime, 0, 0);
+        this.transform.position += new Vector3(STEP * Time.deltaTime, 0, 0);
     }
 }

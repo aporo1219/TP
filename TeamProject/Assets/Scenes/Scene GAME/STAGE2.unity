@@ -366,6 +366,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3665473859507639707, guid: 0c3b1aef19090574c98c62e2b57e7976, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665473859507639707, guid: 0c3b1aef19090574c98c62e2b57e7976, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3665473860430297143, guid: 0c3b1aef19090574c98c62e2b57e7976, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -517,7 +525,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213779771}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43af0b5a53e1951489f8d3f517494db3, type: 3}
   m_Name: 

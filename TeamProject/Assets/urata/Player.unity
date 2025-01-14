@@ -1306,10 +1306,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flashInterval: 0.02
   loopCount: 4
-  chilipepper: {fileID: 1950905318}
-  dumbbell: {fileID: 239748018}
-  pitfall: {fileID: 211742351}
-  emptyca: {fileID: 0}
 --- !u!114 &1256506946881228138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1333,5 +1329,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6da46d7956938af418d32d5c848909ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1256506946881228140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256506946881228135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c70e411245e8e849a7849383f8aaaba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

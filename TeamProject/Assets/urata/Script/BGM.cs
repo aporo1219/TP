@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BGM : MonoBehaviour
 {
+    //各シーンのBGM設定
+
     public string sceneName = ""; //シーン名
     // Start is called before the first frame update
     void Start()
@@ -42,6 +44,8 @@ public class BGM : MonoBehaviour
         {
             //ランキングBGM
             SoundManager.soundManager.PlayBgm(BGMType.Ranking);
+
+            //記録更新時のBGM
         }
     }
 }

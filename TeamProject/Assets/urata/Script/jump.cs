@@ -5,6 +5,7 @@ using UnityEngine;
 public class jump : MonoBehaviour
 {
     //2段ジャンプ禁止のジャンプ
+
     public float jumpPower;//ジャンプ力
     private Rigidbody2D rb;//物理法則
     private bool isJumping = false;//擬似ジャンプ

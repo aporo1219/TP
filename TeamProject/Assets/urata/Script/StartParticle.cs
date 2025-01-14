@@ -9,8 +9,8 @@ public class StartParticle : MonoBehaviour
 	//衝突時の処理
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		// 当たったアイテムが"chocolate"“cookie”“pudding”"Choco night"“Pud night”タグを持っていたら
-		if (other.gameObject.tag == "chocolate" || other.gameObject.tag == "Choco night")//チョコ
+		// 当たったアイテムが"chocolate"“cookie”“pudding”"Choco night"“Pud night”"Cook night"　"Cook night"タグを持っていたら
+		if (other.gameObject.tag == "chocolate" || other.gameObject.tag == "Cook night")//チョコ
 		{
 			ParticleSystem();
 		}

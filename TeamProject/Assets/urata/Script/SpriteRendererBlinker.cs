@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SpriteRendererBlinker : MonoBehaviour
 {
+    //障害物に当たったら点滅させる
+
     //移動スピードと点滅の間隔
     [SerializeField] float flashInterval;
     //点滅させるときのループカウント

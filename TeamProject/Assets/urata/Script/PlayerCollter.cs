@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class PlayerCollter : MonoBehaviour
 {
+    //歩くのとしゃがむアニメーション
+
     //歩く
     private float STEP = 3.0f;
+
     //しゃがむアニメーション
     private Animator anim = null;
 
     void Start()
     {
+        //しゃがむアニメーションの初期化
         anim = GetComponent<Animator>();
     }
 
@@ -30,7 +34,7 @@ public class PlayerCollter : MonoBehaviour
             anim.SetBool("crouch", false);
 
         }
-        //右向き
+        //右向きに動く
         this.transform.position += new Vector3(STEP * Time.deltaTime, 0, 0);
     }
 }

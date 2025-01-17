@@ -19,13 +19,10 @@ public class UI_SE : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        //‚à‚µƒ}ƒEƒX‚ª‰Ÿ‚³‚ê‚½‚ç
+        if (Input.GetMouseButtonDown(0))
         {
             GetComponent<AudioSource>().Play();
-        }
-        else if(Input.GetMouseButtonUp(0))
-        {
-            GetComponent<AudioSource>().Stop();
         }
     }
 }

@@ -4232,8 +4232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 446ca6ee46528a141815843ebed78a42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  calobar: {fileID: 1476224875}
-  calo: 100
 --- !u!114 &1476224875 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3665473860430297142, guid: 0c3b1aef19090574c98c62e2b57e7976, type: 3}
@@ -4245,6 +4243,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1476224876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476224872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ecc65c0bcf0d584bb2093c8f508cbfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  calobar: {fileID: 0}
+  decrease: 5
 --- !u!1001 &1478780814
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -18,6 +18,7 @@ public class text : MonoBehaviour
         Invoke("Tutor", 21);
         Invoke("Turia", 24);
         Invoke("TutorialTex", 26);
+        Invoke("TutorialTe", 30);
     }
 
     void TutorialText()
@@ -66,5 +67,11 @@ public class text : MonoBehaviour
     {
         //26秒後テキスト変更
         textUI.text = "ゴールを目指そう！";
+    }
+
+    void TutorialTe()
+    {
+        //31秒後テキスト変更
+        textUI.text = " ";
     }
 }

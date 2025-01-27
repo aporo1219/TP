@@ -9,6 +9,7 @@ public class TutorialCalorie : MonoBehaviour
     public Slider calobar;
     public GameObject calo0text;
     public int calo = 100;
+    public int decrease;
     private float currentTime = 0f;
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class TutorialCalorie : MonoBehaviour
         if (currentTime >= 1.0f)
         {
             //5‚¸‚ÂŒ¸‚Á‚Ä‚¢‚­
-            calobar.value -= 5;
+            calobar.value -= decrease;
             currentTime = 0;
         }
         //ƒJƒƒŠ[‚ª0‚É‚È‚Á‚½‚ç

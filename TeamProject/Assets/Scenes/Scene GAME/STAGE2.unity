@@ -471,8 +471,12 @@ PrefabInstance:
       value: 324
       objectReference: {fileID: 0}
     - target: {fileID: 3665473860430297145, guid: 0c3b1aef19090574c98c62e2b57e7976, type: 3}
+      propertyPath: decrease
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665473860430297145, guid: 0c3b1aef19090574c98c62e2b57e7976, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3665473860994911618, guid: 0c3b1aef19090574c98c62e2b57e7976, type: 3}
       propertyPath: m_Name
@@ -610,8 +614,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af0b5a53e1951489f8d3f517494db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  calobar: {fileID: 213779775}
-  calo: 100
 --- !u!114 &213779775 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3665473860430297142, guid: 0c3b1aef19090574c98c62e2b57e7976, type: 3}

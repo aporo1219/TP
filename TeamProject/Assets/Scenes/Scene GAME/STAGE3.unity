@@ -1316,8 +1316,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e0814b7f0122b4418b1b243421507be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  calobar: {fileID: 1792997285}
-  calo: 100
 --- !u!1 &972615680
 GameObject:
   m_ObjectHideFlags: 0
@@ -2544,6 +2542,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SE: {fileID: 1893688464}
   SEBack: {fileID: 227193194}
+--- !u!114 &1792997289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792997284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ecc65c0bcf0d584bb2093c8f508cbfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  calobar: {fileID: 0}
+  decrease: 2
 --- !u!1 &1841799623
 GameObject:
   m_ObjectHideFlags: 0

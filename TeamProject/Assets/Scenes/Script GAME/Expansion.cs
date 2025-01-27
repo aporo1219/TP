@@ -2,11 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move : MonoBehaviour
+public class Expansion : MonoBehaviour
 {
+    public GameObject Dumbbel;
     public float TimerS = 0.0f;//ˆê’èŠÔ’´‚¦‚é‚ÆˆÚ“®‚µ‚È‚­‚·‚é•Ï”
     private Transform movement;//ˆÚ“®‚Ì•Ï”
-   
+
+    // Start is called before the first frame update
+    void Start()
+    { 
+        Dumbbel.transform.localScale += new Vector3((float)0.0, (float)0.0, 1);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -18,8 +25,11 @@ public class Move : MonoBehaviour
             movement = gameObject.transform;
             //1•bŠÔ‚É‚¢‚­‚çˆÚ“®‚·‚é‚©‚Ìˆ—
             transform.position += new Vector3(-3, 0) * Time.deltaTime;
-          
+            for (float i = 0;i< 25;i+=0.01f)
+            {
+            Dumbbel.transform.localScale += new Vector3((float)i, (float)i, 1);
+            }
         }
-
     }
+       
 }

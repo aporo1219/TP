@@ -8,7 +8,7 @@ public class Goal1 : MonoBehaviour
 
     public void Start()
     {
-        GoalScore = PlayerPrefs.GetInt("SCORE", GoalScore);
+        GoalScore = PlayerPrefs.GetInt("SCORE", GoalScore);//ƒXƒRƒAî•ñ‚ğæ“¾‚·‚é
     }
 
     public void Update()

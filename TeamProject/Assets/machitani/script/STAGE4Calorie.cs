@@ -25,15 +25,15 @@ public class STAGE4Calorie : MonoBehaviour
 
         if (currentTime >= 1.0f)
         {
-            //カロリーゲージが5ずつ減っていく
-            calobar.value -= 5;
+            //カロリーゲージが2ずつ減っていく
+            calobar.value -= 2;
             currentTime = 0;
         }
         //カロリーゲージが0になったら
-        if (calobar.value == 0)
-        {
+        //if (calobar.value == 0)
+        //{
             //ゲームオーバーシーンに移動
-            SceneManager.LoadScene("GAMEOVER1");
-        }
+           // SceneManager.LoadScene("GAMEOVER1");
+       // }
     }
 }

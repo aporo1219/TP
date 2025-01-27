@@ -6,20 +6,28 @@ using UnityEngine.SceneManagement;
 
 public class CalorieTEXT : MonoBehaviour
 {
-    public static float CalorieTEXTInitival;//カロリー文字の変数
+    public static float CalorieTEXTInitival;//カロリー文字の値の変数
     public Text CalorieText;//カロリーの文字の変数
-    private float Ctime;//経過時間
+    private float Calorietime;//経過時間
     public static int StageInfor;//ステージ情報の取得
-    public Text RD;//残り距離のテキスト
-    public float distance;//残り距離の計算用の変数
+    public Text RemainingDistance;//残り距離のテキスト
+    public float Distance;//残り距離の変数
+    public float Way;//残り距離計算用の変数
+    private float StayTime;
+    public GameObject NotEnergy;
+    public GameObject NotEnergyBack;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
+        Distance = 37.0f;
         Time.timeScale = 0;//Aボタン押されるまで停止
         CalorieTEXTInitival = 100;//カロリーテキストの初期化
         StageInfor = 0;//クリアしたステージによってリザルトのスイーツの絵を変える
-        distance = 37;//距離の初期化
+        NotEnergy.SetActive(false);
+        NotEnergyBack.SetActive(false);
     }
 
 
@@ -30,28 +38,39 @@ public class CalorieTEXT : MonoBehaviour
         //Aボタンを押したらゲームスタート
         if (Input.GetKeyDown(KeyCode.A))
         {
-            Time.timeScale = 1;
+            IsPause();
         }
+
         //カロリーテキスト関連の関数
         CalorieCharacter();
 
         //距離関連の関数
-        RemainingDistance();
+        RemainingDistanceFunction();
+        
+
     }
+    public void IsPause()
+    {
+        Time.timeScale = 1;
+    }
+    
     //カロリーテキスト関連の関数
+    //説明
     public void CalorieCharacter()
     {
         //カロリーのテキスト文字の表示
         CalorieText.text = "カロリー:" + CalorieTEXTInitival + "Kcal".ToString();
-        Ctime += Time.deltaTime;//カロリー文字の設定
+        Calorietime += Time.deltaTime;//カロリー文字の設定
+        
+        
 
         //時間経過(ステージ１）
         if (SceneManager.GetActiveScene().name == "STAGE1")
         {
-            if (Ctime >= 1.0f)
+            if (Calorietime >= 1.0f)
             {
                 CalorieTEXTInitival -= 2;
-                Ctime = 0;
+                Calorietime = 0;
 
                 StageInfor = 0;
             }
@@ -59,10 +78,10 @@ public class CalorieTEXT : MonoBehaviour
         //時間経過(ステージ2）
         if (SceneManager.GetActiveScene().name == "STAGE2")
         {
-            if (Ctime >= 1.0f)
+            if (Calorietime >= 1.0f)
             {
                 CalorieTEXTInitival -= 5;
-                Ctime = 0;
+                Calorietime = 0;
 
                 StageInfor = 1;
             }
@@ -70,10 +89,10 @@ public class CalorieTEXT : MonoBehaviour
         //時間経過(ステージ3）
         if (SceneManager.GetActiveScene().name == "STAGE3")
         {
-            if (Ctime >= 1.0f)
+            if (Calorietime >= 1.0f)
             {
                 CalorieTEXTInitival -= 2;
-                Ctime = 0;
+                Calorietime = 0;
 
                 StageInfor = 2;
             }
@@ -81,42 +100,53 @@ public class CalorieTEXT : MonoBehaviour
         //時間経過(ステージ4）
         if (SceneManager.GetActiveScene().name == "STAGE4")
         {
-            if (Ctime >= 1.0f)
+            if (Calorietime >= 1.0f)
             {
                 CalorieTEXTInitival -= 2;
-                Ctime = 0;
+                Calorietime = 0;
 
                 StageInfor = 3;
             }
         }
+
         //時間経過(ステージ5）
         if (SceneManager.GetActiveScene().name == "STAGE5")
         {
-            if (Ctime >= 1.0f)
+            if (Calorietime >= 1.0f)
             {
                 CalorieTEXTInitival -= 5;
-                Ctime = 0;
+                Calorietime = 0;
 
                 StageInfor = 4;
             }
-        } 
-        //上限を100
+        }
+        
+        //上限を100にし、100を超えると数値を100にする
         if (CalorieTEXTInitival >= 100.0f)
         {
             CalorieTEXTInitival = 100.0f;
         }
-        //なくなったらゲームオーバーシーンの切り替え
+
+        //カロリーゲージが０になるとゲームオーバーシーンに代わる
         if (CalorieTEXTInitival <= 0.0f)
         {
-            GAMEOVER();
+            GameOver();
         }
+      
+      
     }
 
     //距離の関数
-    public void RemainingDistance()
+    public void RemainingDistanceFunction()
     {
-        distance -= Time.deltaTime;//残り距離の計算
-        RD.text = "お店までの距離は" + distance + "メートルです。".ToString();//残り距離のテキスト
+        Way += Time.deltaTime;//残り距離を計算すための処理
+        RemainingDistance.text = "お店までの距離は" + Distance + "メートルです。".ToString();//残り距離のテキスト
+        //残り距離の計算
+        if(Way >= 1.0f)
+        {
+            Distance -= 1;
+            Way = 0;
+        }
     }
 
     //オブジェクトに当たった時の処理
@@ -171,9 +201,17 @@ public class CalorieTEXT : MonoBehaviour
         }
     }
 
-   //ゲームオーバー関数
-    private void GAMEOVER()
-    {
-        SceneManager.LoadScene("GameOver1");
+    
+
+   public void GameOver()
+   { 
+        NotEnergy.SetActive(true);
+        NotEnergyBack.SetActive(true);
+        StayTime += Time.deltaTime;
+        if(StayTime >= 3)
+        {
+          SceneManager.LoadScene("GAMEOVER1");
+           StayTime = 0;
+        }
     }
 }

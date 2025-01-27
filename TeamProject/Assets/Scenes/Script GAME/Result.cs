@@ -7,11 +7,11 @@ using UnityEngine.UI;
 public class Result : MonoBehaviour
 {
     //クリア画面のスイーツオブジェクトの変数
-    [SerializeField] public GameObject M;
-    [SerializeField] public GameObject Pan;
-    [SerializeField] public GameObject Par;
-    [SerializeField] public GameObject C;
-    [SerializeField] public GameObject D;
+    [SerializeField] public GameObject Macaron;
+    [SerializeField] public GameObject Pancake;
+    [SerializeField] public GameObject Parfait;
+    [SerializeField] public GameObject Cake;
+    [SerializeField] public GameObject Dounatu;
 
     //テキストの変数
     public Text resultcalo;
@@ -23,11 +23,11 @@ public class Result : MonoBehaviour
     void Start()
     {
         //文字の初期化
-        M.SetActive(false);
-        Pan.SetActive(false);
-        Par.SetActive(false);
-        C.SetActive(false);
-        D.SetActive(false);
+        Macaron.SetActive(false);
+        Pancake.SetActive(false);
+        Parfait.SetActive(false);
+        Cake.SetActive(false);
+        Dounatu.SetActive(false);
     }
 
      void Update()
@@ -38,23 +38,23 @@ public class Result : MonoBehaviour
 　　　　 
         if(CalorieTEXT.StageInfor == 0)//ステージ1のスイーツの表示
         {
-            D.SetActive(true);
+            Dounatu.SetActive(true);
         }
         if (CalorieTEXT.StageInfor == 1)//ステージ2のスイーツの表示
         {
-            M.SetActive(true);
+            Macaron.SetActive(true);
         }
         if (CalorieTEXT.StageInfor == 2)//ステージ3のスイーツの表示
         {
-            Par.SetActive(true);
+            Parfait.SetActive(true);
         }
         if (CalorieTEXT.StageInfor == 3)//ステージ4のスイーツの表示
         {
-            Pan.SetActive(true);
+            Pancake.SetActive(true);
         }
         if (CalorieTEXT.StageInfor == 4)//ステージ5のスイーツの表示
         {
-            C.SetActive(true);
+            Cake.SetActive(true);
         }
    　}
 

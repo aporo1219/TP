@@ -6,10 +6,10 @@ using UnityEngine.UI;
 
 public class Mouse1 : MonoBehaviour
 {
-    private int numberTITLE;
-    private int numberGAMEOVER;
-    private int numberGAMECLEAR;
-    private int numberRANKING;
+    private int number_TITLE;//タイトルのボタン用の引数
+    private int number_GAMEOVER;//ゲームオーバーのボタン用の引数
+    private int number_GAMECLEAR;//ゲームクリアのボタン用の引数
+    private int number_RANKING;//ランキングのボタン用の引数
     // Start is called before the first frame update
     void Start()
     {
@@ -25,35 +25,35 @@ public class Mouse1 : MonoBehaviour
         {
             Cursor.visible = true;//カーソル表示
             Cursor.lockState = CursorLockMode.None;//カーソル機能あり
-            ClickGN(numberTITLE);
+            ClickGN(number_TITLE);
         }
         //シーンがゲームオーバーの時
         if (SceneManager.GetActiveScene().name == "GAMEOVER1")
         {
             Cursor.visible = true;//カーソル表示
             Cursor.lockState = CursorLockMode.None;//カーソル機能あり
-            ClickGO(numberGAMEOVER);
+            ClickGO(number_GAMEOVER);
         }
         //シーンがゲームクリアの時
         if (SceneManager.GetActiveScene().name == "GAMECLEAR1")
         {
             Cursor.visible = true;//カーソル表示
             Cursor.lockState = CursorLockMode.None;//カーソル機能あり
-            ClickGC(numberGAMECLEAR);
+            ClickGC(number_GAMECLEAR);
         }
         //シーンがランキングの時
         if (SceneManager.GetActiveScene().name == "RANKING")
         {
             Cursor.visible = true;//カーソル表示
             Cursor.lockState = CursorLockMode.None;//カーソル機能あり
-            ClickB(numberRANKING);
+            ClickB(number_RANKING);
         }
     }
 
     //タイトルのボタン関数
-    public void ClickGN(int TITLEBUTTON)
+    public void ClickGN(int TITLE_BUTTON)
     {
-        switch (TITLEBUTTON)
+        switch (TITLE_BUTTON)
         {
             case 1:
                 //ゲームセレクトへボタンの処理
@@ -65,12 +65,13 @@ public class Mouse1 : MonoBehaviour
         }
     }
     //ゲームオーバーシーンのボタン関数
-    public void ClickGO(int OVERBUTTON)
+    public void ClickGO(int OVER_BUTTON)
     {
-        switch (OVERBUTTON)
+        switch (OVER_BUTTON)
         {
             case 1:
                 //戻るボタンの処理
+                //失敗したステージに戻るためステージ情報を取得し、分けている
                 if(CalorieTEXT.StageInfor == 0)
                 {
                   SceneManager.LoadScene("STAGE1");
@@ -101,9 +102,9 @@ public class Mouse1 : MonoBehaviour
         }
     }
     //ゲームクリアのボタン関数
-    public void ClickGC(int CLEARBUTTON)
+    public void ClickGC(int CLEAR_BUTTON)
     {
-        switch (CLEARBUTTON)
+        switch (CLEAR_BUTTON)
         {
             case 1:
                 //ステージセレクトへのボタンの処理
@@ -122,9 +123,9 @@ public class Mouse1 : MonoBehaviour
         }
     }
     //ランキングシーンのボタン関数
-    public void ClickB(int RANKINGBUTTON)
+    public void ClickB(int RANKING_BUTTON)
     {
-        switch (RANKINGBUTTON)
+        switch (RANKING_BUTTON)
         {
             case 1:
                 //ゲームクリアに戻るボタンの処理

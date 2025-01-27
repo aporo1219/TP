@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 public class Cleark1: MonoBehaviour
 {
-    public GameObject ObjectToShowCleark;
+    public GameObject ObjectToShowCleark;//店員のオブジェクトの変数
     public float DisplayDelay = 2.0f; // 表示までの待機時間（秒）
-    private float TimerCleark;
+    private float TimerCleark;//店員の表示時間
     private bool IsDisplayedCleark;
 
     
@@ -17,8 +17,6 @@ public class Cleark1: MonoBehaviour
         TimerCleark = 0.0f;
         IsDisplayedCleark = false;
         ObjectToShowCleark.SetActive(false); // ゲーム開始時にオブジェクトを非表示にする
-
-       
 
     }
 

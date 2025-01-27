@@ -4,21 +4,20 @@ using UnityEngine;
 
 public class jump1 : MonoBehaviour
 {
-    public float jumpPower;
+    public float jumpPower;//ジャンプ力の変数
     private Rigidbody2D rb;
-    private bool isJumping = false;
+    private bool isJumping = false;//地面についているかの判定の変数
     
 
     void Start()
     {
+        //Rigidbody2Dの取得
         rb = GetComponent<Rigidbody2D>();
-        
-        
     }
 
     void Update()
     {
-        //スペースを押したらジャンプ
+        //地面についているときかつ、スペースを押したときにジャンプ
         if (Input.GetKeyDown(KeyCode.Space) && !isJumping)
         {
             rb.velocity = Vector3.up * jumpPower;
@@ -52,7 +51,5 @@ public class jump1 : MonoBehaviour
     public void Timer()
     {
         jumpPower = 8;
-        
-        
     }
 }

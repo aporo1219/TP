@@ -5,37 +5,49 @@ using System.Collections.Generic;
 public class AppearenceOne : MonoBehaviour
 {
     //もの
-    public GameObject objectToShowany;
-    public float displayDelayany = 30.0f; // 表示までの待機時間（秒）
-    private float timerany;
-    private bool isDisplayedany;
+    public GameObject objectToShowThing;//オブジェクトの変数
+    public float displayDelayThing = 30.0f; // 表示までの待機時間（秒）
+    private float timerThing;//現れる計算用の変数
+    private bool isDisplayedThing;
+    
+
    
+
     private void Start()
     {
         // 初期化（出現）
         //もの
-        timerany = 0.0f;
-        isDisplayedany = false;
-        objectToShowany.SetActive(false); // ゲーム開始時にオブジェクトを非表示にする
+        timerThing = 0.0f;
+        isDisplayedThing = false;
+        objectToShowThing.SetActive(false); // ゲーム開始時にオブジェクトを非表示にする
+        
+      
     }
 
     private void Update()
     {
         //出現の処理
         //もの
-        if (!isDisplayedany)
+        if (!isDisplayedThing)
         {
-            timerany += Time.deltaTime; // 経過時間をカウント
-
-            if (timerany>= displayDelayany)
-            {
-                // 一定時間経過したらオブジェクトを表示
-                objectToShowany.SetActive(true);
-                isDisplayedany = true;
-
-            }
+             Thing();
         }
-        
     }
+
+    //物の処理の関数
+    public void Thing()
+    {
+        timerThing += Time.deltaTime; // 経過時間をカウント
+
+        if (timerThing >= displayDelayThing)
+        {
+            // 一定時間経過したらオブジェクトを表示
+            objectToShowThing.SetActive(true);
+            isDisplayedThing = true;
+
+        }
+    }
+
+   
 }
 

@@ -30,10 +30,10 @@ public class STAGE2Calorie : MonoBehaviour
             currentTime = 0;
         }
         //カロリーゲージが0になったら
-        if(calobar.value==0)
-        {
+        //if(calobar.value==0)
+        //{
             //ゲームオーバーシーンに移動
-            SceneManager.LoadScene("GAMEOVER1");
-        }
+            //SceneManager.LoadScene("GAMEOVER1");
+        //}
     }
 }

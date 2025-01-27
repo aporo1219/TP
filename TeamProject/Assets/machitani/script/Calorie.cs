@@ -30,10 +30,10 @@ public class Calorie : MonoBehaviour
             calobar.value -= 2;
             currentTime = 0;
         }
-        if (calobar.value == 0)
+        /*if (calobar.value == 0)
         {
             //ゲームオーバー画面に移動
             SceneManager.LoadScene("GAMEOVER1");
-        }
+        }*/
     }
 }

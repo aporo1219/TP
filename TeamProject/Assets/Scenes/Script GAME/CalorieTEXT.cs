@@ -13,10 +13,10 @@ public class CalorieTEXT : MonoBehaviour
     public Text RemainingDistance;//残り距離のテキスト
     public float Distance;//残り距離の変数
     public float Way;//残り距離計算用の変数
-    private float StayTime;
-    public GameObject NotEnergy;
-    public GameObject NotEnergyBack;
-
+    private float StayTime;//力尽きた後の時間用の変数
+    public  GameObject NotEnergy;//カロリーがなくなったらテキストを表示の変数
+    public  GameObject NotEnergyBack;//カロリーがなくなったらバックを表示の変数
+    public static int Fnish;//ゲームオーバーになった時に店の表示を消す情報を送る変数
 
 
     // Start is called before the first frame update
@@ -36,7 +36,7 @@ public class CalorieTEXT : MonoBehaviour
     void Update()
     {
         //Aボタンを押したらゲームスタート
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             IsPause();
         }
@@ -202,15 +202,21 @@ public class CalorieTEXT : MonoBehaviour
     }
 
     
-
+    //ゲームオーバーの関数
    public void GameOver()
    { 
+        //カロリーがなくなったら、力尽きたテキストとバックを表示
         NotEnergy.SetActive(true);
         NotEnergyBack.SetActive(true);
+        //しばらくたってからゲームオーバーシーンに切り替えるための時間
         StayTime += Time.deltaTime;
-        if(StayTime >= 3)
+        //カロリーがなくなったらお店を非表示にする
+        Fnish = 1;
+        //3秒たったらゲームオーバーシーンに切り替え
+        if (StayTime >= 3)
         {
-          SceneManager.LoadScene("GAMEOVER1");
+           SceneManager.LoadScene("GAMEOVER1");
+            //力尽きてからの時間のリセット
            StayTime = 0;
         }
     }

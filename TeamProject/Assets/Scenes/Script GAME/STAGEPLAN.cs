@@ -17,7 +17,7 @@ public class STAGEPLAN : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             SE.SetActive(false);//A‚ğ‰Ÿ‚µ‚½‚çÁ‚·
             SEBack.SetActive(false);//A‚ğ‰Ÿ‚µ‚½‚çÁ‚·

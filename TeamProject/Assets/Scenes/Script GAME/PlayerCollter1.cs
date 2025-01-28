@@ -8,14 +8,14 @@ public class PlayerCollter1 : MonoBehaviour
     
     //しゃがむ
     private Animator anim = null;
-   
+    public BoxCollider2D Hit_Judgment;
    
 
     void Start()
     {
         //しゃがむアニメーションの初期化
         anim = GetComponent<Animator>();
-        
+        Hit_Judgment = GetComponent<BoxCollider2D>();
     }
 
     void Update()
@@ -33,6 +33,11 @@ public class PlayerCollter1 : MonoBehaviour
             anim.SetBool("crouch", false);
         }
 
+
+        if(CalorieTEXT.Fnish == 1)
+        {
+            Hit_Judgment.enabled = false;
+        }
     }
 
    

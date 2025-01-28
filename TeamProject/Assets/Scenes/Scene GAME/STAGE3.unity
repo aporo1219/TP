@@ -2660,7 +2660,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u3053\u306E\u30B9\u30C6\u30FC\u30B8\u306F\u591C\u306E\u305F\u3081\u3001\n\u30B9\u30A4\u30FC\u30C4\u53D6\u5F97\u6642\u306E\u30AB\u30ED\u30EA\u30FC\u56DE\u5FA9\u91CF\u304C\u6E1B\u308B\u3088\n\n\uFF21\u3067\u30B9\u30BF\u30FC\u30C8"
+  m_Text: "\u3053\u306E\u30B9\u30C6\u30FC\u30B8\u306F\u591C\u306E\u305F\u3081\u3001\n\u30B9\u30A4\u30FC\u30C4\u53D6\u5F97\u6642\u306E\u30AB\u30ED\u30EA\u30FC\u56DE\u5FA9\u91CF\u304C\u6E1B\u308B\u3088\n\n\u30B9\u30DA\u30FC\u30B9\u3067\u30B9\u30BF\u30FC\u30C8"
 --- !u!222 &1893688467
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2801,6 +2801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb509f095d4f85f41b4409a3ea574748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Hit_Judgment: {fileID: 0}
 --- !u!114 &1900071208
 MonoBehaviour:
   m_ObjectHideFlags: 0

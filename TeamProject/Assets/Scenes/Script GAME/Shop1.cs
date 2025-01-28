@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class Shop1 : MonoBehaviour
 {
-    public GameObject ObjectToShowShop;//店のオブジェクトの変数
+    public  GameObject ObjectToShowShop;//店のオブジェクトの変数
     public float DisplayDelayShop = 30.0f; // 表示までの待機時間（秒）
     private float TimerShop;
     private bool IsDisplayedShop;
@@ -24,24 +24,23 @@ public class Shop1 : MonoBehaviour
 
     private void Update()
     {
+       
         //出現の処理
         if (!IsDisplayedShop)
         {
             TimerShop += Time.deltaTime; // 経過時間をカウント
 
-            if (TimerShop >= DisplayDelayShop)
-            {
+           if (TimerShop >= DisplayDelayShop)
+           {
                 // 一定時間経過したらオブジェクトを表示
                 ObjectToShowShop.SetActive(true);
                 IsDisplayedShop= true;
+                
 
-            }
-            else if(CalorieTEXT.CalorieTEXTInitival <= 0)
-            {
-            ObjectToShowShop.SetActive(false);
-            }
+           } 
+           
         }
-        
+
     }
 }
 

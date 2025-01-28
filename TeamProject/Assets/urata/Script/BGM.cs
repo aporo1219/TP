@@ -10,12 +10,12 @@ public class BGM : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(sceneName == "Title")//タイトルシーンがあれば切り替える
+        if(sceneName == "title")//タイトルシーンがあれば切り替える
         {
             //タイトルBGM
             SoundManager.soundManager.PlayBgm(BGMType.titlemusic);
         }
-        else if (sceneName == "game　select")//セレクトシーンがあれば切り替える
+        else if (sceneName == "gameselect")//セレクトシーンがあれば切り替える
         {
             //セレクトBGM
             SoundManager.soundManager.PlayBgm(BGMType.selectscreen);
@@ -25,27 +25,25 @@ public class BGM : MonoBehaviour
             //チュートリアルBGM
             SoundManager.soundManager.PlayBgm(BGMType.tutorial);
         }
-        else if (sceneName == "STAGE")//ゲーム本編シーンがあれば切り替える
+        else if (sceneName == "stsge")//ゲーム本編シーンがあれば切り替える
         {
             //メインBGM
-            SoundManager.soundManager.PlayBgm(BGMType.GAMEmain);
+            SoundManager.soundManager.PlayBgm(BGMType.gamemain);
         }
-        else if (sceneName == "GAMECLEAR1")//ゲームクリアシーンがあれば切り替える
+        else if (sceneName == "gameclear1")//ゲームクリアシーンがあれば切り替える
         {
             //クリアBGM
-            SoundManager.soundManager.PlayBgm(BGMType.GAMEclear);
+            SoundManager.soundManager.PlayBgm(BGMType.gameclear);
         }
-        else if (sceneName == "GAMEOVER1")//ゲームオーバーシーンがあれば切り替える
+        else if (sceneName == "gameover1")//ゲームオーバーシーンがあれば切り替える
         {
             //オーバー画面BGM
-            SoundManager.soundManager.PlayBgm(BGMType.GAMEover);
+            SoundManager.soundManager.PlayBgm(BGMType.gameover);
         }
-        else if(sceneName == "RANKING")//ランキングシーンがあれば切り替える
+        else if(sceneName == "ranking")//ランキングシーンがあれば切り替える
         {
             //ランキングBGM
             SoundManager.soundManager.PlayBgm(BGMType.Ranking);
-
-            //記録更新時のBGM
         }
     }
 }

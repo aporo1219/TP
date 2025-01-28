@@ -6,13 +6,13 @@ public class UI_SE : MonoBehaviour
 {
     //マウスでクリックすると音が鳴る
 
-    public bool DontDestroyEnabled = true;
+    public bool DontDestroyEnabled = true;//変数宣言
     // Start is called before the first frame update
     void Start()
     {
         if (DontDestroyEnabled)
         {
-            // Sceneを遷移してもオブジェクトが消えないようにする
+            //Sceneを遷移してもオブジェクトが消えないようにする
             DontDestroyOnLoad(this);
         }
     }
@@ -22,6 +22,7 @@ public class UI_SE : MonoBehaviour
         //もしマウスが押されたら
         if (Input.GetMouseButtonDown(0))
         {
+            //SEを再生する
             GetComponent<AudioSource>().Play();
         }
     }

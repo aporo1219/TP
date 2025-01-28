@@ -1836,7 +1836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b250bbd8edad954fbf9a37900f862a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: "game\u3000select"
+  sceneName: gameselect
 --- !u!82 &835301283 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 3910077491994525772, guid: c9db302960cbe3a4bac02668c40e3204, type: 3}

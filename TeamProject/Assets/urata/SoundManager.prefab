@@ -52,13 +52,10 @@ MonoBehaviour:
   bgmInGAMEover: {fileID: 8300000, guid: d316222475a9ca8439f65638394136de, type: 3}
   bgmIntutorial: {fileID: 8300000, guid: d1a5e1fc369a4bd4294809baad3f4c31, type: 3}
   bgmInRanking: {fileID: 8300000, guid: b88a33a4e2a1d66499927bab280adcf7, type: 3}
-  sejump: {fileID: 8300000, guid: d0cc61dd8d9845b42b87c7ce53a6c3fc, type: 3}
-  secrouch: {fileID: 8300000, guid: c75ec04331798be4483bb50ec274801d, type: 3}
-  sedamage: {fileID: 8300000, guid: ad6e1319c92db0f43962e455aee0b91a, type: 3}
-  serecovery: {fileID: 8300000, guid: b87c9c054c7b6544597eabf5fed976d9, type: 3}
-  seClerk: {fileID: 0}
-  meChime: {fileID: 0}
-  meUImusic: {fileID: 0}
+  seJump: {fileID: 8300000, guid: d0cc61dd8d9845b42b87c7ce53a6c3fc, type: 3}
+  seCrouch: {fileID: 8300000, guid: c75ec04331798be4483bb50ec274801d, type: 3}
+  seDamage: {fileID: 8300000, guid: ad6e1319c92db0f43962e455aee0b91a, type: 3}
+  seRecovery: {fileID: 8300000, guid: b87c9c054c7b6544597eabf5fed976d9, type: 3}
 --- !u!82 &3910077491994525772
 AudioSource:
   m_ObjectHideFlags: 0

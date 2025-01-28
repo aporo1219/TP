@@ -17,11 +17,11 @@ public class RANKING : MonoBehaviour
     public GameObject HCT3;//ハイカロリー数を表示するTEXTを表示、非表示
     public GameObject HCT4;//ハイカロリー数を表示するTEXTを表示、非表示
     public GameObject HCT5;//ハイカロリー数を表示するTEXTを表示、非表示
-    private int HC1;//ハイカロリー数の変数
-    private int HC2;//ハイカロリー数の変数
-    private int HC3;//ハイカロリー数の変数
-    private int HC4;//ハイカロリー数の変数
-    private int HC5;//ハイカロリー数の変数
+    public static int HC1;//ハイカロリー数の変数
+    public static int HC2;//ハイカロリー数の変数
+    public static int HC3;//ハイカロリー数の変数
+    public static int HC4;//ハイカロリー数の変数
+    public static int HC5;//ハイカロリー数の変数
 
     
 

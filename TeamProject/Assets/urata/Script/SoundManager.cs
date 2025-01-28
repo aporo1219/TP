@@ -6,12 +6,12 @@ using UnityEngine;
 //BGMタイプ
 public enum BGMType
 {
-    Noue,//なし
+    Noue,           //なし
     titlemusic,     //タイトル
     selectscreen,   //セレクト画面
-    GAMEmain,       //ゲーム本編
-    GAMEclear,      //ゲームクリア
-    GAMEover,       //ゲームオーバー
+    gamemain,       //ゲーム本編
+    gameclear,      //ゲームクリア
+    gameover,       //ゲームオーバー
     tutorial,       //チュートリアル
     Ranking,        //ランキング
 }
@@ -22,11 +22,12 @@ public enum SEType
     crouch,         //しゃがむ
     damage,         //当たった時の音
     recovery,       //回復音
-    UImusic,        //各UIを押した場合の音
 }
 
 public class SoundManager:MonoBehaviour
 {
+    //変数宣言
+
     //BGM
     public AudioClip bgmIntitlemusic;       //タイトル
     public AudioClip bgmInselectscreen;     //セレクト画面
@@ -36,11 +37,10 @@ public class SoundManager:MonoBehaviour
     public AudioClip bgmIntutorial;         //チュートリアル
     public AudioClip bgmInRanking;          //ランキング
     //SE
-    public AudioClip sejump;                //ジャンプ
-    public AudioClip secrouch;              //しゃがむ
-    public AudioClip sedamage;              //当たった時の音
-    public AudioClip serecovery;            //回復音
-    public AudioClip meUImusic;             //各UIを押した場合の音
+    public AudioClip seJump;                //ジャンプ
+    public AudioClip seCrouch;              //しゃがむ
+    public AudioClip seDamage;              //当たった時の音
+    public AudioClip seRecovery;            //回復音
 
     public static SoundManager soundManager;//最初のSoundManagerを保存する
 
@@ -53,13 +53,11 @@ public class SoundManager:MonoBehaviour
         {
             soundManager = this;//staic変数に自分を保存する
         }
-        else
-        {
-            Destroy(gameObject);//ゲームオブジェクトの破壊
-        }
     }
 
     //BGM設定
+    //説明
+    //引数名
     public void PlayBgm(BGMType type)
     {
         if(type != plyingBGM)
@@ -74,15 +72,15 @@ public class SoundManager:MonoBehaviour
             {
                 audio.clip = bgmInselectscreen;//セレクト画面
             }
-            else if (type == BGMType.GAMEmain)
+            else if (type == BGMType.gamemain)
             {
                 audio.clip = bgmInGAMEmain;//ゲーム本編
             }
-            else if (type == BGMType.GAMEclear)
+            else if (type == BGMType.gameclear)
             {
                 audio.clip = bgmInGAMEclear;//ゲームクリア
             }
-            else if (type == BGMType.GAMEover)
+            else if (type == BGMType.gameover)
             {
                 audio.clip = bgmInGAMEover;//ゲームオーバー
             }
@@ -97,35 +95,25 @@ public class SoundManager:MonoBehaviour
             audio.Play();
         }
     }
-    //BGM停止
-    public void StopBgm()
-    {
-        GetComponent<AudioSource>().Stop();
-        plyingBGM = BGMType.Noue;
-    }
 
     //SE再生
     public void SEPlay(SEType type)
     {
         if(type == SEType.jump)
         {
-            GetComponent<AudioSource>().PlayOneShot(sejump);//ジャンプ
+            GetComponent<AudioSource>().PlayOneShot(seJump);//ジャンプ
         }
         else if(type == SEType.crouch)
         {
-            GetComponent <AudioSource>().PlayOneShot(secrouch);//しゃがむ
+            GetComponent <AudioSource>().PlayOneShot(seCrouch);//しゃがむ
         }
         else if (type == SEType.damage)
         {
-            GetComponent < AudioSource >().PlayOneShot(sedamage);//当たった時の音
+            GetComponent < AudioSource >().PlayOneShot(seDamage);//当たった時の音
         }
         else if (type == SEType.recovery)
         {
-            GetComponent < AudioSource >().PlayOneShot(serecovery);//回復音
-        }
-        else if (type == SEType.UImusic)
-        {
-            GetComponent < AudioSource >().PlayOneShot(meUImusic);//各UIを押した場合の音
+            GetComponent < AudioSource >().PlayOneShot(seRecovery);//回復音
         }
     }
 }

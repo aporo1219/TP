@@ -796,6 +796,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5918605359815374525, guid: a30afa27492709841b8d693d1fb9e0d5, type: 3}
+      propertyPath: m_GravityScale
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5918605359815374526, guid: a30afa27492709841b8d693d1fb9e0d5, type: 3}
       propertyPath: m_Size.x
       value: 1.2735558
@@ -1723,7 +1727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b250bbd8edad954fbf9a37900f862a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: STAGE
+  sceneName: stsge
 --- !u!1 &1075181333 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8214193823781493606, guid: f4a4e96d690f6774aa01e1e4281c4f0b, type: 3}

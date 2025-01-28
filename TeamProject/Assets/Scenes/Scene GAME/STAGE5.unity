@@ -4813,7 +4813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b250bbd8edad954fbf9a37900f862a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: STAGE
+  sceneName: stsge
 --- !u!1 &1850980850
 GameObject:
   m_ObjectHideFlags: 0
@@ -4986,6 +4986,10 @@ PrefabInstance:
     - target: {fileID: 1256506947706843048, guid: 544093e7a9e48ff418d67e5559d5eea6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.058
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256506947706843050, guid: 544093e7a9e48ff418d67e5559d5eea6, type: 3}
+      propertyPath: m_GravityScale
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 1256506947706843053, guid: 544093e7a9e48ff418d67e5559d5eea6, type: 3}
       propertyPath: m_Name

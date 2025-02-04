@@ -696,7 +696,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607788798}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -704,10 +704,10 @@ RectTransform:
   m_Father: {fileID: 2048438293}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -19.035, y: -33.686005}
-  m_SizeDelta: {x: 737.72, y: 67.372986}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 503, y: 298.46}
+  m_SizeDelta: {x: 639.98, y: 121.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &607788800
 MonoBehaviour:
@@ -731,11 +731,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 75
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 100
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -842,6 +842,10 @@ PrefabInstance:
       propertyPath: OutputAudioMixerGroup
       value: 
       objectReference: {fileID: 4466722664326447920, guid: 8f6113ef5f92b8545b3a7acc2726fd76, type: 2}
+    - target: {fileID: 3910077491994525773, guid: c9db302960cbe3a4bac02668c40e3204, type: 3}
+      propertyPath: bgmInhighscore
+      value: 
+      objectReference: {fileID: 8300000, guid: 6a47a9d036fa84c4e94a2a3a9623e49b, type: 3}
     - target: {fileID: 3910077491994525774, guid: c9db302960cbe3a4bac02668c40e3204, type: 3}
       propertyPath: m_Name
       value: SoundManager
@@ -1245,7 +1249,6 @@ GameObject:
   - component: {fileID: 2048438290}
   - component: {fileID: 2048438295}
   - component: {fileID: 2048438294}
-  - component: {fileID: 2048438296}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1372,34 +1375,12 @@ MonoBehaviour:
   highcalorieTEXT3: {fileID: 1730990912}
   highcalorieTEXT4: {fileID: 11933488}
   highcalorieTEXT5: {fileID: 495099178}
+  Messagetext: {fileID: 607788798}
   HCT1: {fileID: 219055747}
   HCT2: {fileID: 739011096}
   HCT3: {fileID: 1730990911}
   HCT4: {fileID: 11933487}
   HCT5: {fileID: 495099177}
---- !u!114 &2048438296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048438287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae338750ff07368409bbbad5917b6d57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  highcalorieTEXT: {fileID: 607788800}
-  highcalorieTEXT2: {fileID: 607788800}
-  highcalorieTEXT3: {fileID: 607788800}
-  highcalorieTEXT4: {fileID: 607788800}
-  highcalorieTEXT5: {fileID: 607788800}
-  HCT1: {fileID: 219055747}
-  HCT2: {fileID: 739011096}
-  HCT3: {fileID: 1730990911}
-  HCT4: {fileID: 11933487}
-  HCT5: {fileID: 495099177}
-  Messagetext: {fileID: 607788800}
 --- !u!1001 &2147132360
 PrefabInstance:
   m_ObjectHideFlags: 0

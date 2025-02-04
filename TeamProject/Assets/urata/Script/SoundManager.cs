@@ -4,6 +4,9 @@ using UnityEngine;
 //BGM・SE設定
 
 //BGMタイプ
+/// <summary>
+/// ここからBGMが呼ばれる
+/// </summary>
 public enum BGMType
 {
     Noue,           //なし
@@ -14,8 +17,12 @@ public enum BGMType
     gameover,       //ゲームオーバー
     tutorial,       //チュートリアル
     Ranking,        //ランキング
+    Highscore,      //記録更新
 }
 //SEタイプ
+/// <summary>
+/// 
+/// </summary>
 public enum SEType
 {
     jump,           //ジャンプ
@@ -24,6 +31,9 @@ public enum SEType
     recovery,       //回復音
 }
 
+/// <summary>
+/// 
+/// </summary>
 public class SoundManager:MonoBehaviour
 {
     //変数宣言
@@ -36,6 +46,7 @@ public class SoundManager:MonoBehaviour
     public AudioClip bgmInGAMEover;         //ゲームオーバー
     public AudioClip bgmIntutorial;         //チュートリアル
     public AudioClip bgmInRanking;          //ランキング
+    public AudioClip bgmInhighscore;        //ランキング
     //SE
     public AudioClip seJump;                //ジャンプ
     public AudioClip seCrouch;              //しゃがむ
@@ -46,6 +57,9 @@ public class SoundManager:MonoBehaviour
 
     public static BGMType plyingBGM = BGMType.Noue;//再生中のBGM
 
+    /// <summary>
+    /// 
+    /// </summary>
     private void Awake()
     {
         //BGM再生
@@ -55,9 +69,10 @@ public class SoundManager:MonoBehaviour
         }
     }
 
-    //BGM設定
-    //説明
-    //引数名
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="type"></param>
     public void PlayBgm(BGMType type)
     {
         if(type != plyingBGM)
@@ -92,11 +107,19 @@ public class SoundManager:MonoBehaviour
             {
                 audio.clip = bgmInRanking;//ランキング
             }
+            else if(type == BGMType.Highscore)
+            {
+                audio.clip = bgmInhighscore;//記録更新
+            }
             audio.Play();
         }
     }
 
     //SE再生
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="type"></param>
     public void SEPlay(SEType type)
     {
         if(type == SEType.jump)

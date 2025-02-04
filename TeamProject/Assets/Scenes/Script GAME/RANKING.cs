@@ -12,6 +12,7 @@ public class RANKING : MonoBehaviour
     public Text highcalorieTEXT3;//ハイカロリー数を表示するTEXT
     public Text highcalorieTEXT4;//ハイカロリー数を表示するTEXT
     public Text highcalorieTEXT5;//ハイカロリー数を表示するTEXT
+    public GameObject Messagetext;//ハイスコアメッセージの表示、非表示
     public GameObject HCT1;//ハイカロリー数を表示するTEXTを表示、非表示
     public GameObject HCT2;//ハイカロリー数を表示するTEXTを表示、非表示
     public GameObject HCT3;//ハイカロリー数を表示するTEXTを表示、非表示
@@ -27,6 +28,7 @@ public class RANKING : MonoBehaviour
 
     public void Start()
     {
+        Messagetext.SetActive(false);//メッセージテキストを非表示
         //今までの最高記録を変数に挿入する
         HC1 = PlayerPrefs.GetInt("HIGHCALORIE1", HC1);
         HC2 = PlayerPrefs.GetInt("HIGHCALORIE2", HC2);
@@ -45,10 +47,9 @@ public class RANKING : MonoBehaviour
     
     public void Update()
     {
-       
         //クリアしたステージによってのベストカロリー量の表示
         if (CalorieTEXT.StageInfor == 0)
-        { 
+        {
             RecoadStage1();
         }
         if (CalorieTEXT.StageInfor == 1)
@@ -82,8 +83,13 @@ public class RANKING : MonoBehaviour
         if (CalorieTEXT.CalorieTEXTInitival > HC1)
         {
             HC1 = (int)CalorieTEXT.CalorieTEXTInitival;//更新処理
+            Messagetext.SetActive(true);// メッセージテキストを表示
             highcalorieTEXT.text = "カロリーの最高残量は" + HC1 + "です。".ToString();//ハイカロリー量の表示
             PlayerPrefs.SetInt("HIGHCALORIE1", HC1);//新しい記録をPlayerPrefsに記録
+            //ランキングBGMをクリアにする
+            SoundManager.plyingBGM = BGMType.Noue;
+            //ハイスコアBGMを再生
+            SoundManager.soundManager.PlayBgm(BGMType.Highscore);
             //スペースを押したら記録のリセット
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -106,8 +112,13 @@ public class RANKING : MonoBehaviour
         if (CalorieTEXT.CalorieTEXTInitival > HC2)
         {
             HC2 = (int)CalorieTEXT.CalorieTEXTInitival;//更新処理
+            Messagetext.SetActive(true);// メッセージテキストを表示
             highcalorieTEXT.text = "カロリーの最高残量は" + HC2 + "です。".ToString(); //ハイカロリー量の表示
             PlayerPrefs.SetInt("HIGHCALORIE2", HC2);//新しい記録をPlayerPrefsに記録
+            //ランキングBGMをクリアにする
+            SoundManager.plyingBGM = BGMType.Noue;
+            //ハイスコアBGMを再生
+            SoundManager.soundManager.PlayBgm(BGMType.Highscore);
             //スペースを押したら記録のリセット
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -130,8 +141,13 @@ public class RANKING : MonoBehaviour
         if (CalorieTEXT.CalorieTEXTInitival > HC3)
         {
             HC3 = (int)CalorieTEXT.CalorieTEXTInitival;//更新処理
+            Messagetext.SetActive(true);// メッセージテキストを表示
             highcalorieTEXT.text = "カロリーの最高残量は" + HC3 + "です。".ToString();//ハイカロリー量の表示
             PlayerPrefs.SetInt("HIGHCALORIE3", HC3);//新しい記録をPlayerPrefsに記録
+            //ランキングBGMをクリアにする
+            SoundManager.plyingBGM = BGMType.Noue;
+            //ハイスコアBGMを再生
+            SoundManager.soundManager.PlayBgm(BGMType.Highscore);
             //スペースを押したら記録のリセット
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -154,8 +170,13 @@ public class RANKING : MonoBehaviour
         if (CalorieTEXT.CalorieTEXTInitival > HC4)
         {
             HC4 = (int)CalorieTEXT.CalorieTEXTInitival;//更新処理
+            Messagetext.SetActive(true);// メッセージテキストを表示
             highcalorieTEXT.text = "カロリーの最高残量は" + HC4 + "です。".ToString();//ハイカロリー量の表示
             PlayerPrefs.SetInt("HIGHCALORIE4", HC4);//新しい記録をPlayerPrefsに記録
+            //ランキングBGMをクリアにする
+            SoundManager.plyingBGM = BGMType.Noue;
+            //ハイスコアBGMを再生
+            SoundManager.soundManager.PlayBgm(BGMType.Highscore);
             //スペースを押したら記録のリセット
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -178,8 +199,13 @@ public class RANKING : MonoBehaviour
         if (CalorieTEXT.CalorieTEXTInitival > HC5)
         {
             HC5 = (int)CalorieTEXT.CalorieTEXTInitival;//更新処理
+           Messagetext.SetActive(true);// メッセージテキストを表示
             highcalorieTEXT.text = "カロリーの最高残量は" + HC5 + "です。".ToString();//ハイカロリー量の表示
             PlayerPrefs.SetInt("HIGHCALORIE5", HC5);//新しい記録をPlayerPrefsに記録
+            //ランキングBGMをクリアにする
+            SoundManager.plyingBGM = BGMType.Noue;
+            //ハイスコアBGMを再生
+            SoundManager.soundManager.PlayBgm(BGMType.Highscore);
             //スペースを押したら記録のリセット
             if (Input.GetKeyDown(KeyCode.Space))
             {

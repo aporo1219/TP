@@ -407,6 +407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerS: 0
+  Dumbbell: {x: 0, y: 0, z: 0}
 --- !u!114 &287436600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,6 +588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerS: 0
+  Dumbbell: {x: 0, y: 0, z: 0}
 --- !u!114 &339222377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1036,6 +1038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerS: 0
+  Dumbbell: {x: 0, y: 0, z: 0}
 --- !u!114 &817192797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1078,6 +1081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerS: 0
+  Dumbbell: {x: 0, y: 0, z: 0}
 --- !u!114 &879037481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1112,6 +1116,14 @@ PrefabInstance:
     - target: {fileID: 8799641735616636383, guid: 2134a3da3cb9bb94b9b0b5e49bbee996, type: 3}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8799641735616636383, guid: 2134a3da3cb9bb94b9b0b5e49bbee996, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8799641735616636383, guid: 2134a3da3cb9bb94b9b0b5e49bbee996, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8799641735616636383, guid: 2134a3da3cb9bb94b9b0b5e49bbee996, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1186,6 +1198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerS: 0
+  Dumbbell: {x: 0, y: 0, z: 0}
 --- !u!114 &943010867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1198,6 +1211,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b83518652df4ac4fb9d05b0947faf39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &943010871
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943010864}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0c64209141a39546aa0e680f23e4ea2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &944879807 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1753334955121566717, guid: 0909a41b86844b94fa964007dae2f584, type: 3}
@@ -1343,6 +1376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerS: 0
+  Dumbbell: {x: 0, y: 0, z: 0}
 --- !u!1001 &1033308275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1761,6 +1795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerS: 0
+  Dumbbell: {x: 0, y: 0, z: 0}
 --- !u!4 &1114636275 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2947317340852676896, guid: 93f954396c3e1d045a317f114dd29da2, type: 3}
@@ -1854,7 +1889,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116258112}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2088,7 +2123,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "A\u3067\u30B9\u30BF\u30FC\u30C8"
+  m_Text: "\u30B9\u30DA\u30FC\u30B9\u3067\u30B9\u30BF\u30FC\u30C8"
 --- !u!222 &1297433477
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2743,6 +2778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerS: 0
+  Dumbbell: {x: 0, y: 0, z: 0}
 --- !u!4 &1825087892 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5385805805735958407, guid: 39ae046ce07878a4189ad1ffa8d6e60d, type: 3}
@@ -2844,6 +2880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb509f095d4f85f41b4409a3ea574748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Hit_Judgment: {fileID: 0}
 --- !u!114 &1995175024
 MonoBehaviour:
   m_ObjectHideFlags: 0

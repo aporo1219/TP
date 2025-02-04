@@ -77,6 +77,8 @@ public class RANKING : MonoBehaviour
         highcalorieTEXT.text = "カロリーの最高残量は" + HC1 + "です。".ToString();
         if (Input.GetKey(KeyCode.Space))//スペースが押されたらカロリー量のリセット
         {
+            HC1 = 0;
+            PlayerPrefs.SetInt("HIGHCALORIE1", HC1);
             PlayerPrefs.DeleteKey("HIGHCALORIE1");
         }
         //ハイカロリーより現在のカロリー量が上回ったとき（ステージ１）
@@ -93,6 +95,8 @@ public class RANKING : MonoBehaviour
             //スペースを押したら記録のリセット
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                HC1 = 0;
+                PlayerPrefs.SetInt("HIGHCALORIE1", HC1);
                 PlayerPrefs.DeleteKey("HIGHCALORIE1");
             }
         }
@@ -106,6 +110,8 @@ public class RANKING : MonoBehaviour
         //スペースを押したら記録のリセット
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            HC2 = 0;
+            PlayerPrefs.SetInt("HIGHCALORIE2", HC2);
             PlayerPrefs.DeleteKey("HIGHCALORIE2");
         }
         //ハイカロリーより現在のカロリー量が上回ったとき（ステージ２）
@@ -122,6 +128,8 @@ public class RANKING : MonoBehaviour
             //スペースを押したら記録のリセット
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                HC2 = 0;
+                PlayerPrefs.SetInt("HIGHCALORIE2", HC2);
                 PlayerPrefs.DeleteKey("HIGHCALORIE2");
             }
         }
@@ -135,6 +143,8 @@ public class RANKING : MonoBehaviour
         //スペースを押したら記録のリセット
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            HC3 = 0;
+            PlayerPrefs.SetInt("HIGHCALORIE3", HC3);
             PlayerPrefs.DeleteKey("HIGHCALORIE3");
         }
         //ハイカロリーより現在のカロリー量が上回ったとき（ステージ３）
@@ -151,6 +161,8 @@ public class RANKING : MonoBehaviour
             //スペースを押したら記録のリセット
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                HC3 = 0;
+                PlayerPrefs.SetInt("HIGHCALORIE3", HC3);
                 PlayerPrefs.DeleteKey("HIGHCALORIE3");
             }
         }
@@ -164,6 +176,8 @@ public class RANKING : MonoBehaviour
         //スペースを押したら記録のリセット
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            HC4 = 0;
+            PlayerPrefs.SetInt("HIGHCALORIE4", HC4);
             PlayerPrefs.DeleteKey("HIGHCALORIE4");
         }
         //ハイカロリーより現在のカロリー量が上回ったとき（ステージ４）
@@ -180,6 +194,8 @@ public class RANKING : MonoBehaviour
             //スペースを押したら記録のリセット
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                HC4 = 0;
+                PlayerPrefs.SetInt("HIGHCALORIE4", HC4);
                 PlayerPrefs.DeleteKey("HIGHCALORIE4");
             }
         }
@@ -193,6 +209,8 @@ public class RANKING : MonoBehaviour
         //スペースを押したら記録のリセット
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            HC5 = 0;
+            PlayerPrefs.SetInt("HIGHCALORIE5", HC5);
             PlayerPrefs.DeleteKey("HIGHCALORIE5");
         }
         //ハイカロリーより現在のカロリー量が上回ったとき（ステージ５）
@@ -209,6 +227,8 @@ public class RANKING : MonoBehaviour
             //スペースを押したら記録のリセット
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                HC5 = 0;
+                PlayerPrefs.SetInt("HIGHCALORIE5", HC5);
                 PlayerPrefs.DeleteKey("HIGHCALORIE5");
             }
         }

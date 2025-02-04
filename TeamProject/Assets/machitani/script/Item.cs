@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Item : MonoBehaviour
-{
+{ 
     private void OnTriggerEnter2D(Collider2D other)
     {
         // áŠQ•¨‚É‚Ô‚Â‚©‚Á‚½‚©‚Ç‚¤‚©‚ğŠm”F

@@ -9,6 +9,7 @@ public class AppearenceOne : MonoBehaviour
     public float displayDelayThing = 30.0f; // 表示までの待機時間（秒）
     private float timerThing;//現れる計算用の変数
     private bool isDisplayedThing;
+   
     
 
    
@@ -20,7 +21,7 @@ public class AppearenceOne : MonoBehaviour
         timerThing = 0.0f;
         isDisplayedThing = false;
         objectToShowThing.SetActive(false); // ゲーム開始時にオブジェクトを非表示にする
-        
+        GameObject dumbbell = GameObject.FindWithTag("dumbbell");
       
     }
 
@@ -44,7 +45,7 @@ public class AppearenceOne : MonoBehaviour
             // 一定時間経過したらオブジェクトを表示
             objectToShowThing.SetActive(true);
             isDisplayedThing = true;
-
+            
         }
     }
 

@@ -67,6 +67,7 @@ public class Mouse1 : MonoBehaviour
     //ゲームオーバーシーンのボタン関数
     public void ClickGO(int OVER_BUTTON)
     {
+        
         switch (OVER_BUTTON)
         {
             case 1:

@@ -16,7 +16,7 @@ public class CalorieTEXT : MonoBehaviour
     private float StayTime;//力尽きた後の時間用の変数
     public  GameObject NotEnergy;//カロリーがなくなったらテキストを表示の変数
     public  GameObject NotEnergyBack;//カロリーがなくなったらバックを表示の変数
-    public static int Fnish;//ゲームオーバーになった時に店の表示を消す情報を送る変数
+    public static int Finish;//ゲームオーバーになった時に店の表示を消す情報を送る変数
 
 
     // Start is called before the first frame update
@@ -28,6 +28,7 @@ public class CalorieTEXT : MonoBehaviour
         StageInfor = 0;//クリアしたステージによってリザルトのスイーツの絵を変える
         NotEnergy.SetActive(false);
         NotEnergyBack.SetActive(false);
+        
     }
 
 
@@ -49,11 +50,18 @@ public class CalorieTEXT : MonoBehaviour
         
 
     }
+
+    /// <summary>
+    /// <see cref="IsPause">ポーズ</see>
+    /// </summary>
     public void IsPause()
     {
         Time.timeScale = 1;
     }
     
+    /// <summary>
+    /// <see cref="CalorieCharacter">カロリーのテキスト</see>
+    /// </summary>
     //カロリーテキスト関連の関数
     //説明
     public void CalorieCharacter()
@@ -136,6 +144,9 @@ public class CalorieTEXT : MonoBehaviour
       
     }
 
+    /// <summary>
+    /// <see cref=" RemainingDistanceFunction"> ゴールまでの距離関連</see>/>
+    /// </summary>
     //距離の関数
     public void RemainingDistanceFunction()
     {
@@ -201,7 +212,9 @@ public class CalorieTEXT : MonoBehaviour
         }
     }
 
-    
+    /// <summary>
+    /// <see cref="GameOver">ゲームオーバー</see>
+    /// </summary>
     //ゲームオーバーの関数
    public void GameOver()
    { 
@@ -211,13 +224,14 @@ public class CalorieTEXT : MonoBehaviour
         //しばらくたってからゲームオーバーシーンに切り替えるための時間
         StayTime += Time.deltaTime;
         //カロリーがなくなったらお店を非表示にする
-        Fnish = 1;
+        Finish = 1;
         //3秒たったらゲームオーバーシーンに切り替え
         if (StayTime >= 3)
         {
            SceneManager.LoadScene("GAMEOVER1");
             //力尽きてからの時間のリセット
            StayTime = 0;
+            Finish = 0;
         }
     }
 }

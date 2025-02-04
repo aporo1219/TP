@@ -16,10 +16,12 @@ public class PlayerCollter1 : MonoBehaviour
         //しゃがむアニメーションの初期化
         anim = GetComponent<Animator>();
         Hit_Judgment = GetComponent<BoxCollider2D>();
+        Hit_Judgment.enabled = true;
     }
 
     void Update()
     {
+       
         //キーの代入
         //float horizontalKey = Input.GetKey(KeyCode.S);
         //Sキーを押したらしゃがむ
@@ -33,11 +35,11 @@ public class PlayerCollter1 : MonoBehaviour
             anim.SetBool("crouch", false);
         }
 
-
-        if(CalorieTEXT.Fnish == 1)
+        if(CalorieTEXT.Finish == 1)
         {
-            Hit_Judgment.enabled = false;
+           Hit_Judgment.enabled = false;
         }
+        
     }
 
    

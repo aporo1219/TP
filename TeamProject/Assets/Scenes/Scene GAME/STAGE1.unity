@@ -407,7 +407,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerS: 0
-  Dumbbell: {x: 0, y: 0, z: 0}
 --- !u!114 &287436600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,7 +587,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerS: 0
-  Dumbbell: {x: 0, y: 0, z: 0}
 --- !u!114 &339222377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1038,7 +1036,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerS: 0
-  Dumbbell: {x: 0, y: 0, z: 0}
 --- !u!114 &817192797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1081,7 +1078,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerS: 0
-  Dumbbell: {x: 0, y: 0, z: 0}
 --- !u!114 &879037481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1198,7 +1194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerS: 0
-  Dumbbell: {x: 0, y: 0, z: 0}
 --- !u!114 &943010867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1376,7 +1371,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerS: 0
-  Dumbbell: {x: 0, y: 0, z: 0}
 --- !u!1001 &1033308275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1795,7 +1789,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerS: 0
-  Dumbbell: {x: 0, y: 0, z: 0}
 --- !u!4 &1114636275 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2947317340852676896, guid: 93f954396c3e1d045a317f114dd29da2, type: 3}
@@ -2144,6 +2137,10 @@ PrefabInstance:
       value: chocolate
       objectReference: {fileID: 0}
     - target: {fileID: 3763228647566364211, guid: 89a31365f227f7942bc07257a7c71f37, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3763228647566364211, guid: 89a31365f227f7942bc07257a7c71f37, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
@@ -2420,7 +2417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.38975367, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.2784314, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2778,7 +2775,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerS: 0
-  Dumbbell: {x: 0, y: 0, z: 0}
 --- !u!4 &1825087892 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5385805805735958407, guid: 39ae046ce07878a4189ad1ffa8d6e60d, type: 3}

@@ -36,9 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene GAME/operation.unity
     guid: f9e3297154055c84cbb99dc4d21caf95
   - enabled: 1
-    path: Assets/Scenes/Scene GAME/RANKING.unity
-    guid: 368f322e3a75a3645a3e8b4bb92e565f
-  - enabled: 1
     path: Assets/Scenes/Scene GAME/TutorialClear.unity
     guid: 5f78580d84aae0e4e9388d328842c29f
+  - enabled: 1
+    path: Assets/Scenes/Scene GAME/RANKING.unity
+    guid: 368f322e3a75a3645a3e8b4bb92e565f
   m_configObjects: {}
